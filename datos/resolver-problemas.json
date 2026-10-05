@@ -1,0 +1,1157 @@
+{
+  "_leeme": "Contenido de la sección Resolver problemas. Consulta README.md, apartado «Editar el contenido», antes de modificar este archivo.",
+  "familias": {
+    "diag": {
+      "nombre": "Diagnosticar causas",
+      "descripcion": "Encuentra por qué ocurre el problema antes de intentar arreglarlo."
+    },
+    "dec": {
+      "nombre": "Decidir y conciliar",
+      "descripcion": "Compara opciones, pon a prueba tus propuestas y concilia intereses."
+    },
+    "rep": {
+      "nombre": "Replantear el problema",
+      "descripcion": "Sal del atasco mirando el problema desde otro ángulo."
+    },
+    "plan": {
+      "nombre": "Planear y ejecutar",
+      "descripcion": "Convierte una meta en pasos, prioridades y un orden de trabajo."
+    },
+    "ant": {
+      "nombre": "Anticipar riesgos",
+      "descripcion": "Prevé fallos, escenarios y consecuencias antes de actuar."
+    }
+  },
+  "formatos": [
+    {
+      "etiqueta": "Sin indicación de formato",
+      "texto": ""
+    },
+    {
+      "etiqueta": "Tabla",
+      "texto": "Presenta la respuesta en una tabla."
+    },
+    {
+      "etiqueta": "Viñetas breves",
+      "texto": "Presenta la respuesta en viñetas breves."
+    },
+    {
+      "etiqueta": "Informe con apartados",
+      "texto": "Organiza la respuesta en apartados con títulos y cierra con una síntesis."
+    },
+    {
+      "etiqueta": "Con diagrama causal",
+      "texto": "Cierra con un diagrama causal en texto (A → B → C)."
+    }
+  ],
+  "instruccionDeCalidad": "Antes de responder, si te falta información clave, hazme hasta tres preguntas. Distingue los hechos de las suposiciones y señala tu nivel de confianza en cada recomendación.",
+  "rutas": [
+    {
+      "titulo": "De síntoma a solución",
+      "descripcion": "Cuando un problema se repite y quieres resolverlo de fondo.",
+      "prompts": [
+        1,
+        15,
+        11,
+        4
+      ]
+    },
+    {
+      "titulo": "Decisión difícil",
+      "descripcion": "Cuando debes elegir con información incompleta y consecuencias importantes.",
+      "prompts": [
+        10,
+        2,
+        5,
+        19
+      ]
+    },
+    {
+      "titulo": "Estoy atorado",
+      "descripcion": "Cuando llevas tiempo intentando lo mismo sin avanzar.",
+      "prompts": [
+        3,
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "titulo": "Algo salió mal",
+      "descripcion": "Para aprender de un fallo y reorganizar el trabajo.",
+      "prompts": [
+        20,
+        1,
+        6,
+        13
+      ]
+    },
+    {
+      "titulo": "Cambio institucional",
+      "descripcion": "Para impulsar un cambio que afecta a varios actores.",
+      "prompts": [
+        17,
+        7,
+        19,
+        11
+      ]
+    },
+    {
+      "titulo": "Proyecto que abruma",
+      "descripcion": "Para pasar de la sensación de caos a un plan.",
+      "prompts": [
+        18,
+        13,
+        4,
+        11
+      ]
+    }
+  ],
+  "necesidades": [
+    {
+      "necesidad": "Entender por qué pasa algo",
+      "prompts": [
+        1,
+        15
+      ],
+      "razon": "Busca la raíz antes de proponer soluciones."
+    },
+    {
+      "necesidad": "Aprender de un fracaso",
+      "prompts": [
+        20,
+        1
+      ],
+      "razon": "Revisión sin culpables, orientada a prevenir."
+    },
+    {
+      "necesidad": "Elegir entre dos opciones",
+      "prompts": [
+        2,
+        10
+      ],
+      "razon": "Comparación explícita y datos que cambiarían la decisión."
+    },
+    {
+      "necesidad": "Elegir entre varias opciones",
+      "prompts": [
+        9,
+        2
+      ],
+      "razon": "Compara contra tus prioridades y hace visibles los sacrificios."
+    },
+    {
+      "necesidad": "Poner a prueba mi propuesta",
+      "prompts": [
+        5,
+        19
+      ],
+      "razon": "Objeciones fuertes y consecuencias no previstas."
+    },
+    {
+      "necesidad": "Resolver un conflicto entre personas",
+      "prompts": [
+        17,
+        8
+      ],
+      "razon": "Intereses detrás de las posturas y miradas disciplinares."
+    },
+    {
+      "necesidad": "Salir de un atasco",
+      "prompts": [
+        3,
+        12,
+        14
+      ],
+      "razon": "Replantear, volver a lo esencial o buscar analogías."
+    },
+    {
+      "necesidad": "Trabajar con pocos recursos",
+      "prompts": [
+        6,
+        16
+      ],
+      "razon": "Soluciones dentro de tus límites reales."
+    },
+    {
+      "necesidad": "Organizar un proyecto",
+      "prompts": [
+        4,
+        18
+      ],
+      "razon": "Del objetivo a pasos ordenados con un primer paso inmediato."
+    },
+    {
+      "necesidad": "Tengo demasiadas tareas",
+      "prompts": [
+        13,
+        18
+      ],
+      "razon": "Prioriza por costo del retraso y descarta con criterio."
+    },
+    {
+      "necesidad": "Prever qué puede salir mal",
+      "prompts": [
+        11,
+        19
+      ],
+      "razon": "Fallos por etapa y efectos de segundo orden."
+    },
+    {
+      "necesidad": "Planear ante la incertidumbre",
+      "prompts": [
+        7,
+        10
+      ],
+      "razon": "Escenarios y brechas de información."
+    }
+  ],
+  "preguntas": [
+    {
+      "pregunta": "¿Por qué sigue pasando esto?",
+      "prompts": [
+        1,
+        15
+      ]
+    },
+    {
+      "pregunta": "¿Qué hago ahora que ya falló?",
+      "prompts": [
+        20
+      ]
+    },
+    {
+      "pregunta": "¿Cuál elijo?",
+      "prompts": [
+        2,
+        9
+      ]
+    },
+    {
+      "pregunta": "¿Me falta información para decidir?",
+      "prompts": [
+        10
+      ]
+    },
+    {
+      "pregunta": "¿Mi idea resiste una crítica seria?",
+      "prompts": [
+        5
+      ]
+    },
+    {
+      "pregunta": "¿Cómo pongo de acuerdo a todos?",
+      "prompts": [
+        17
+      ]
+    },
+    {
+      "pregunta": "¿Estoy resolviendo el problema correcto?",
+      "prompts": [
+        3,
+        12
+      ]
+    },
+    {
+      "pregunta": "¿Cómo lo haría alguien de otro campo?",
+      "prompts": [
+        8,
+        14
+      ]
+    },
+    {
+      "pregunta": "¿Qué haría sin límites y qué puedo hacer con ellos?",
+      "prompts": [
+        16,
+        6
+      ]
+    },
+    {
+      "pregunta": "¿Por dónde empiezo?",
+      "prompts": [
+        18,
+        4,
+        13
+      ]
+    },
+    {
+      "pregunta": "¿Qué puede salir mal?",
+      "prompts": [
+        11,
+        19,
+        7
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "numero": 1,
+      "id": "analisis-de-causa-raiz",
+      "titulo": "Análisis de causa raíz",
+      "familia": "diag",
+      "plantilla": "Me enfrento a este problema: {p}. Ocurre {f} y comenzó {t}. Usa los Cinco Porqués para rastrear su causa raíz, luego dame 3 soluciones que arreglen la raíz, no los síntomas.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "describe el problema"
+        },
+        {
+          "clave": "f",
+          "etiqueta": "Frecuencia",
+          "marcador": "frecuencia"
+        },
+        {
+          "clave": "t",
+          "etiqueta": "Desde cuándo",
+          "marcador": "marco temporal"
+        }
+      ],
+      "ejemplo": {
+        "p": "la tasa de entrega de actividades en mi aula virtual cae por debajo del 50 % a partir de la semana 4",
+        "f": "en cada cuatrimestre",
+        "t": "hace dos periodos, cuando migramos a la nueva plataforma",
+        "rol": "docente de una licenciatura en línea en una universidad pública mexicana"
+      },
+      "obtienes": "Una cadena causal de cinco «porqués» y tres soluciones dirigidas a la raíz, no a los síntomas.",
+      "cuandoUsarlo": "Un problema se repite y las soluciones anteriores solo lo han aplazado.",
+      "fundamento": "Técnica de los Cinco Porqués, atribuida a Sakichi Toyoda y sistematizada por Taiichi Ohno en el Sistema de Producción Toyota (Ohno, 1988).",
+      "buenasPracticas": [
+        "Aporta datos, no impresiones: fechas, porcentajes y evidencias.",
+        "Pide que señale en qué «porqué» la cadena se bifurca; los problemas educativos rara vez tienen una sola causa.",
+        "Valida cada eslabón con tu equipo o con datos antes de aceptar la raíz."
+      ],
+      "relacionados": [
+        15,
+        20,
+        11
+      ]
+    },
+    {
+      "numero": 2,
+      "id": "marco-de-decision",
+      "titulo": "Marco de decisión",
+      "familia": "dec",
+      "plantilla": "Necesito elegir entre {a} y {b}. Mi objetivo es {o}. Restricciones: {r}. Riesgos: {k}. Compara las ventajas y desventajas, recomienda la mejor opción y anota cualquier información que podría cambiar la recomendación.",
+      "variables": [
+        {
+          "clave": "a",
+          "etiqueta": "Opción A",
+          "marcador": "Opción A"
+        },
+        {
+          "clave": "b",
+          "etiqueta": "Opción B",
+          "marcador": "Opción B"
+        },
+        {
+          "clave": "o",
+          "etiqueta": "Objetivo",
+          "marcador": "objetivo"
+        },
+        {
+          "clave": "r",
+          "etiqueta": "Restricciones",
+          "marcador": "restricciones"
+        },
+        {
+          "clave": "k",
+          "etiqueta": "Riesgos",
+          "marcador": "riesgos"
+        }
+      ],
+      "ejemplo": {
+        "a": "impartir el seminario de metodología de forma síncrona por videoconferencia",
+        "b": "impartirlo de forma asíncrona con cápsulas de video y foros",
+        "o": "que 30 docentes normalistas concluyan su protocolo de investigación en 10 semanas",
+        "r": "conectividad irregular en zonas rurales y 4 horas semanales de disponibilidad",
+        "k": "abandono a mitad del curso y protocolos de baja calidad",
+        "rol": "coordinador de un programa de formación docente"
+      },
+      "obtienes": "Una comparación de ventajas y desventajas, una recomendación y la lista de datos que la harían cambiar.",
+      "cuandoUsarlo": "Tienes dos alternativas claras y necesitas decidir con criterio explícito.",
+      "fundamento": "Heredero del «álgebra prudencial» que Benjamin Franklin describió a Joseph Priestley (1772) y de las matrices de decisión del análisis multicriterio.",
+      "buenasPracticas": [
+        "Indica el peso relativo de cada criterio si no todos importan igual.",
+        "La parte más valiosa es «qué información cambiaría la recomendación»: úsala para decidir qué investigar antes de elegir."
+      ],
+      "relacionados": [
+        9,
+        10,
+        5
+      ]
+    },
+    {
+      "numero": 3,
+      "id": "replantear-problema-estancado",
+      "titulo": "Replantear problema estancado",
+      "familia": "rep",
+      "plantilla": "He estado estancado en {p} durante {d}. Intenté {i}, pero fallaron porque {r}. Desafía mis suposiciones, identifica si estoy resolviendo el problema equivocado y dame 3 enfoques alternativos con las soluciones que cada uno permite.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "problema"
+        },
+        {
+          "clave": "d",
+          "etiqueta": "Duración",
+          "marcador": "duración"
+        },
+        {
+          "clave": "i",
+          "etiqueta": "Intentos",
+          "marcador": "intentos"
+        },
+        {
+          "clave": "r",
+          "etiqueta": "Por qué fallaron",
+          "marcador": "razones"
+        }
+      ],
+      "ejemplo": {
+        "p": "lograr que mi grupo de colaboración académica concluya un artículo conjunto",
+        "d": "ocho meses",
+        "i": "un calendario de reuniones, el reparto de secciones y un documento compartido en la nube",
+        "r": "las secciones no dialogan entre sí y nadie asume la integración",
+        "rol": "líder de un grupo de colaboración académica"
+      },
+      "obtienes": "Las suposiciones que te frenan, un diagnóstico de si el problema está bien planteado y tres enfoques nuevos.",
+      "cuandoUsarlo": "Llevas tiempo intentando lo mismo con variaciones y no avanzas.",
+      "fundamento": "Replanteamiento de problemas (reframing), popularizado en la gestión por Wedell-Wedellsborg (2017).",
+      "buenasPracticas": [
+        "Describe también lo que funcionó a medias: ahí suele estar la pista.",
+        "Pide que formule el problema de al menos tres maneras antes de proponer soluciones."
+      ],
+      "relacionados": [
+        12,
+        14,
+        16
+      ]
+    },
+    {
+      "numero": 4,
+      "id": "creador-de-planes-paso-a-paso",
+      "titulo": "Creador de planes paso a paso",
+      "familia": "plan",
+      "plantilla": "Quiero lograr {o} para {f}. Punto de partida: {s}. Recursos disponibles: {r}. Restricciones: {c}. Divide el trabajo en etapas y en pasos concretos y ordenados; para cada paso indica responsable, duración estimada y criterio de terminado. Señala las dependencias entre pasos y dime cuál es el primer paso que puedo dar hoy.",
+      "variables": [
+        {
+          "clave": "o",
+          "etiqueta": "Objetivo",
+          "marcador": "objetivo"
+        },
+        {
+          "clave": "f",
+          "etiqueta": "Fecha límite",
+          "marcador": "fecha límite"
+        },
+        {
+          "clave": "s",
+          "etiqueta": "Situación actual",
+          "marcador": "situación actual"
+        },
+        {
+          "clave": "r",
+          "etiqueta": "Recursos",
+          "marcador": "recursos"
+        },
+        {
+          "clave": "c",
+          "etiqueta": "Restricciones",
+          "marcador": "restricciones"
+        }
+      ],
+      "ejemplo": {
+        "o": "publicar en una revista indexada un artículo derivado de mi tesis doctoral",
+        "f": "junio de 2027",
+        "s": "tesis defendida; el capítulo de resultados aún no está adaptado al formato de artículo",
+        "r": "10 horas semanales, acceso a bases de datos institucionales y un coautor",
+        "c": "alta carga docente entre semana",
+        "rol": "investigador y docente universitario"
+      },
+      "obtienes": "Un plan por etapas con responsables, duraciones, criterios de terminado, dependencias y un primer paso inmediato.",
+      "cuandoUsarlo": "Sabes qué quieres lograr pero no cómo ordenar el trabajo.",
+      "fundamento": "Estructura de desglose del trabajo (EDT) de la gestión de proyectos y la noción de «criterio de terminado» de los métodos ágiles.",
+      "buenasPracticas": [
+        "Pide pasos que quepan en una sesión de trabajo; los pasos grandes se posponen.",
+        "El «primer paso para hoy» reduce la procrastinación: no lo omitas."
+      ],
+      "relacionados": [
+        13,
+        18,
+        11
+      ],
+      "notaEditorial": "En el documento fuente, el texto de este prompt repite casi literalmente el del n.º 2 (Marco de decisión) y no corresponde a su título. Aquí se propone una redacción coherente con «Creador de planes paso a paso»; el texto original se conserva abajo.",
+      "textoOriginal": "Necesito elegir entre [Opción A] y [Opción B]. Objetivo: [objetivo]. Restricciones: [restricciones]. Riesgos: [riesgos]. Compara las ventajas y desventajas, recomienda la mejor opción y anota qué podría cambiar la recomendación."
+    },
+    {
+      "numero": 5,
+      "id": "revision-del-abogado-del-diablo",
+      "titulo": "Revisión del abogado del diablo",
+      "familia": "dec",
+      "plantilla": "Esta es mi propuesta: {p}. Mis argumentos: {a}. Supuestos en los que se apoya: {s}. Actúa como abogado del diablo: presenta los argumentos más fuertes en contra, identifica los supuestos más débiles y qué evidencia los refutaría, y dime qué tendría que ser cierto para que mi propuesta fracase. Termina con los ajustes que la harían más sólida.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Propuesta",
+          "marcador": "propuesta o decisión"
+        },
+        {
+          "clave": "a",
+          "etiqueta": "Argumentos",
+          "marcador": "argumentos"
+        },
+        {
+          "clave": "s",
+          "etiqueta": "Supuestos",
+          "marcador": "supuestos"
+        }
+      ],
+      "ejemplo": {
+        "p": "sustituir el examen final por un portafolio de evidencias evaluado con rúbrica",
+        "a": "evalúa el proceso, reduce la copia con IA y favorece la reflexión",
+        "s": "los estudiantes tienen tiempo para documentar su trabajo y los facilitadores pueden revisar portafolios extensos a tiempo",
+        "rol": "docente que propone un cambio de evaluación a su academia"
+      },
+      "obtienes": "Las objeciones más fuertes, los supuestos frágiles y los ajustes que blindan tu propuesta.",
+      "cuandoUsarlo": "Ya tienes una propuesta y quieres ponerla a prueba antes de presentarla.",
+      "fundamento": "La figura del advocatus diaboli en los procesos de canonización de la Iglesia católica; en las organizaciones, un antídoto contra el pensamiento de grupo (Janis, 1972).",
+      "buenasPracticas": [
+        "Pide la mejor versión de la postura contraria, no una caricatura.",
+        "No discutas con la respuesta: anota las objeciones que no puedes refutar y trabaja sobre ellas."
+      ],
+      "relacionados": [
+        19,
+        11,
+        2
+      ],
+      "notaEditorial": "En el documento fuente, el texto de este prompt es idéntico al del n.º 2 (Marco de decisión) y no corresponde a su título. Aquí se propone una redacción coherente con «Revisión del abogado del diablo»; el texto original se conserva abajo.",
+      "textoOriginal": "Necesito elegir entre [Opción A] y [Opción B]. Mi objetivo es [objetivo]. Restricciones: [restricciones]. Riesgos: [riesgos]. Compara las ventajas y desventajas, recomienda la mejor opción y anota cualquier información que podría cambiar la recomendación."
+    },
+    {
+      "numero": 6,
+      "id": "solucionador-de-restricciones",
+      "titulo": "Solucionador de restricciones",
+      "familia": "plan",
+      "plantilla": "Quiero lograr {o} bajo estas restricciones: {r}. La mayoría de las soluciones asumen {s}, pero eso no se aplica a mí. Sugiere 3 soluciones realistas que funcionen dentro de mis límites, clasifícalas por viabilidad y explica las ventajas y desventajas de cada una.",
+      "variables": [
+        {
+          "clave": "o",
+          "etiqueta": "Objetivo",
+          "marcador": "objetivo"
+        },
+        {
+          "clave": "r",
+          "etiqueta": "Restricciones",
+          "marcador": "restricciones"
+        },
+        {
+          "clave": "s",
+          "etiqueta": "Suposición que no aplica",
+          "marcador": "suposición"
+        }
+      ],
+      "ejemplo": {
+        "o": "dar retroalimentación formativa personalizada",
+        "r": "180 estudiantes por grupo, sin asistentes y una plataforma institucional sin complementos",
+        "s": "que el docente puede comentar individualmente cada entrega",
+        "rol": "docente de una universidad en línea con grupos numerosos"
+      },
+      "obtienes": "Tres soluciones adaptadas a tus límites reales, ordenadas por viabilidad.",
+      "cuandoUsarlo": "Los consejos habituales no sirven porque tu contexto es distinto.",
+      "fundamento": "Teoría de las restricciones de Eliyahu Goldratt (Goldratt y Cox, 1984): el desempeño de un sistema lo determina su restricción principal.",
+      "buenasPracticas": [
+        "Distingue restricciones duras (normativas, presupuestales) de blandas (costumbres).",
+        "Pide que haga explícito el criterio con que clasifica la viabilidad."
+      ],
+      "relacionados": [
+        16,
+        13,
+        12
+      ]
+    },
+    {
+      "numero": 7,
+      "id": "planificacion-de-escenarios",
+      "titulo": "Planificación de escenarios",
+      "familia": "ant",
+      "plantilla": "Problema: {p}. Incógnitas clave: {v}. Describe los resultados mejores, más probables y peores, la respuesta correcta para cada uno y una estrategia que funcione bien en todos los escenarios.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "problema"
+        },
+        {
+          "clave": "v",
+          "etiqueta": "Incógnitas clave",
+          "marcador": "variables"
+        }
+      ],
+      "ejemplo": {
+        "p": "planear la oferta de cursos en línea del próximo año ante la integración de asistentes de IA en la universidad",
+        "v": "la política institucional sobre IA, el presupuesto para licencias y la disposición del profesorado",
+        "rol": "responsable de diseño instruccional de una universidad"
+      },
+      "obtienes": "Tres escenarios con su respuesta adecuada y una estrategia robusta para todos.",
+      "cuandoUsarlo": "El futuro depende de variables que no controlas.",
+      "fundamento": "Planeación por escenarios desarrollada en Royal Dutch Shell en los años setenta por Pierre Wack (Wack, 1985).",
+      "buenasPracticas": [
+        "Pide indicadores tempranos que revelen qué escenario se está materializando.",
+        "Una estrategia robusta vale más que una óptima para un solo escenario."
+      ],
+      "relacionados": [
+        19,
+        10,
+        11
+      ]
+    },
+    {
+      "numero": 8,
+      "id": "simulacion-de-perspectiva-de-expertos",
+      "titulo": "Simulación de perspectiva de expertos",
+      "familia": "rep",
+      "plantilla": "Problema: {p}. Contexto: {c}. Simula cómo un {e1}, un {e2} y un {e3} enmarcarían y resolverían esto. Luego sintetiza la idea más útil de los tres en una recomendación integrada.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "descríbelo"
+        },
+        {
+          "clave": "c",
+          "etiqueta": "Contexto",
+          "marcador": "industria o situación"
+        },
+        {
+          "clave": "e1",
+          "etiqueta": "Experto 1",
+          "marcador": "Experto 1"
+        },
+        {
+          "clave": "e2",
+          "etiqueta": "Experto 2",
+          "marcador": "Experto 2"
+        },
+        {
+          "clave": "e3",
+          "etiqueta": "Experto 3",
+          "marcador": "Experto 3"
+        }
+      ],
+      "ejemplo": {
+        "p": "la baja participación en los foros de discusión",
+        "c": "licenciatura en línea de una universidad pública mexicana",
+        "e1": "diseñador instruccional",
+        "e2": "psicólogo educativo especialista en motivación",
+        "e3": "analista de datos de aprendizaje",
+        "rol": "facilitador de un curso en línea"
+      },
+      "obtienes": "Tres encuadres disciplinares del problema y una recomendación que integra lo mejor de cada uno.",
+      "cuandoUsarlo": "Sospechas que tu disciplina te da una visión parcial del problema.",
+      "fundamento": "Afín a los «seis sombreros para pensar» de Edward de Bono (1985): separar deliberadamente los puntos de vista.",
+      "buenasPracticas": [
+        "Elige expertos con marcos teóricos en tensión, no complementarios.",
+        "Es una simulación: verifica las afirmaciones atribuidas a cada disciplina en fuentes reales."
+      ],
+      "relacionados": [
+        14,
+        17,
+        3
+      ]
+    },
+    {
+      "numero": 9,
+      "id": "navegador-de-compensaciones-trade-offs",
+      "titulo": "Navegador de compensaciones (Trade-offs)",
+      "familia": "dec",
+      "plantilla": "Decisión: {d}. Prioridades: {p}. Opciones: {o}. Compara cada opción frente a mis prioridades, resalta las principales ventajas y desventajas y lo que podría estar sacrificando, luego recomienda la opción que mejor se adapte a mis objetivos.",
+      "variables": [
+        {
+          "clave": "d",
+          "etiqueta": "Decisión",
+          "marcador": "decisión"
+        },
+        {
+          "clave": "p",
+          "etiqueta": "Prioridades",
+          "marcador": "3-5 factores clave"
+        },
+        {
+          "clave": "o",
+          "etiqueta": "Opciones",
+          "marcador": "lista"
+        }
+      ],
+      "ejemplo": {
+        "d": "elegir la plataforma para el laboratorio virtual de un grupo de investigación",
+        "p": "costo, soberanía de los datos, curva de aprendizaje y colaboración en tiempo real",
+        "o": "Moodle, Google Workspace, Microsoft 365 y Nextcloud",
+        "rol": "coordinador de un laboratorio virtual de investigación"
+      },
+      "obtienes": "Una comparación de cada opción frente a tus prioridades, con lo que sacrificas en cada caso.",
+      "cuandoUsarlo": "Hay más de dos opciones y ninguna gana en todo.",
+      "fundamento": "Análisis de decisión multicriterio y la matriz de selección de conceptos de Stuart Pugh (1991).",
+      "buenasPracticas": [
+        "Ordena tus prioridades de mayor a menor antes de enviarlo.",
+        "Pide explícitamente qué sacrificas con cada opción: es lo que más se olvida."
+      ],
+      "relacionados": [
+        2,
+        10,
+        19
+      ]
+    },
+    {
+      "numero": 10,
+      "id": "identificador-de-brechas-de-informacion",
+      "titulo": "Identificador de brechas de información",
+      "familia": "dec",
+      "plantilla": "Problema: {p}. Lo que sé: {h}. Incertidumbres: {b}. Clasifica las brechas por impacto, explica cómo llenar cada una y recomienda la mejor decisión que puedo tomar con la información que tengo ahora.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "descríbelo"
+        },
+        {
+          "clave": "h",
+          "etiqueta": "Lo que sé",
+          "marcador": "hechos"
+        },
+        {
+          "clave": "b",
+          "etiqueta": "Incertidumbres",
+          "marcador": "brechas"
+        }
+      ],
+      "ejemplo": {
+        "p": "decidir si abrimos un diplomado de IA para docentes el próximo semestre",
+        "h": "30 solicitudes informales, presupuesto aprobado para un grupo y dos instructores disponibles",
+        "b": "la demanda real, el nivel de competencia digital de los aspirantes y el reconocimiento institucional del diplomado",
+        "rol": "coordinador de educación continua"
+      },
+      "obtienes": "Tus lagunas ordenadas por impacto, cómo cerrarlas y la mejor decisión posible hoy.",
+      "cuandoUsarlo": "Te falta información pero no puedes esperar indefinidamente para decidir.",
+      "fundamento": "Teoría del valor de la información en el análisis de decisiones (Howard, 1966).",
+      "buenasPracticas": [
+        "Separa lo que sabes de lo que supones: son columnas distintas.",
+        "Pide el costo aproximado (tiempo, dinero) de cerrar cada brecha."
+      ],
+      "relacionados": [
+        2,
+        7,
+        1
+      ]
+    },
+    {
+      "numero": 11,
+      "id": "mapeo-de-modos-de-fallo",
+      "titulo": "Mapeo de modos de fallo",
+      "familia": "ant",
+      "plantilla": "Estoy implementando esta solución: {s} para resolver {p}. Mapea los modos de fallo más probables en cada etapa. Para cada uno, describe qué lo desencadena, cuál es la consecuencia y qué puedo hacer ahora para prevenirlo o limitarlo. Prioriza por gravedad.",
+      "variables": [
+        {
+          "clave": "s",
+          "etiqueta": "Solución",
+          "marcador": "descríbela"
+        },
+        {
+          "clave": "p",
+          "etiqueta": "Problema que resuelve",
+          "marcador": "problema"
+        }
+      ],
+      "ejemplo": {
+        "s": "un asistente de IA que responde las dudas frecuentes en el foro de un curso en línea",
+        "p": "la saturación del facilitador con preguntas repetidas",
+        "rol": "facilitador y diseñador de un curso en línea"
+      },
+      "obtienes": "Un mapa de fallos por etapa, con desencadenantes, consecuencias y medidas preventivas priorizadas.",
+      "cuandoUsarlo": "Vas a implementar algo y quieres adelantarte a lo que puede salir mal.",
+      "fundamento": "Análisis de Modo y Efecto de Falla (AMEF/FMEA), de origen militar estadounidense a finales de los cuarenta, y la técnica del premortem (Klein, 2007).",
+      "buenasPracticas": [
+        "Describe las etapas de tu solución para que el mapeo sea concreto.",
+        "Pide gravedad, probabilidad y detectabilidad, como en el índice de prioridad de riesgo del AMEF."
+      ],
+      "relacionados": [
+        19,
+        7,
+        20
+      ]
+    },
+    {
+      "numero": 12,
+      "id": "desglose-de-primeros-principios",
+      "titulo": "Desglose de primeros principios",
+      "familia": "rep",
+      "plantilla": "Problema: {p}. El enfoque habitual es {e}. Usa el pensamiento de primeros principios para desafiar sus suposiciones, reconstruir una solución desde cero y explicar cómo difiere del enfoque estándar y por qué.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "descríbelo"
+        },
+        {
+          "clave": "e",
+          "etiqueta": "Enfoque habitual",
+          "marcador": "enfoque"
+        }
+      ],
+      "ejemplo": {
+        "p": "evaluar aprendizajes cuando la IA generativa puede redactar los ensayos",
+        "e": "usar detectores de texto generado por IA y prohibir su uso",
+        "rol": "docente universitario"
+      },
+      "obtienes": "Las suposiciones del enfoque habitual, una solución reconstruida desde lo esencial y su contraste con lo estándar.",
+      "cuandoUsarlo": "La práctica establecida ya no responde a la realidad.",
+      "fundamento": "La noción aristotélica de primeros principios (archai): las proposiciones básicas que no se deducen de otras.",
+      "buenasPracticas": [
+        "Pide que liste las suposiciones del enfoque habitual antes de cuestionarlas.",
+        "Revisa los «principios» resultantes: a veces también son supuestos."
+      ],
+      "relacionados": [
+        3,
+        16,
+        14
+      ]
+    },
+    {
+      "numero": 13,
+      "id": "priorizacion-bajo-presion",
+      "titulo": "Priorización bajo presión",
+      "familia": "plan",
+      "plantilla": "Estoy gestionando estas tareas: {t}. Tiempo/recursos: {r}. Costo del retraso o fallo: {c}. Priorízalas, explica la clasificación, identifica qué puedo delegar o descartar y dame un plan de acción para el próximo {m}.",
+      "variables": [
+        {
+          "clave": "t",
+          "etiqueta": "Tareas",
+          "marcador": "lista"
+        },
+        {
+          "clave": "r",
+          "etiqueta": "Tiempo y recursos",
+          "marcador": "restricciones"
+        },
+        {
+          "clave": "c",
+          "etiqueta": "Costo del retraso",
+          "marcador": "consecuencias"
+        },
+        {
+          "clave": "m",
+          "etiqueta": "Horizonte",
+          "marcador": "marco temporal"
+        }
+      ],
+      "ejemplo": {
+        "t": "calificar 120 actividades, preparar una ponencia, dictaminar un artículo, asistir a la reunión de academia y planear el siguiente bloque",
+        "r": "25 horas disponibles esta semana",
+        "c": "las calificaciones fuera de plazo afectan a los estudiantes y la ponencia tiene fecha fija",
+        "m": "bloque de cinco días hábiles",
+        "rol": "docente e investigador con carga académica completa"
+      },
+      "obtienes": "Una lista priorizada y justificada, lo que puedes delegar o descartar y un plan de acción.",
+      "cuandoUsarlo": "Hay más tareas que tiempo y todo parece urgente.",
+      "fundamento": "El costo del retraso de Donald Reinertsen (2009) y la distinción entre lo urgente y lo importante de la matriz de Eisenhower.",
+      "buenasPracticas": [
+        "Cuantifica el costo del retraso de cada tarea, aunque sea de forma aproximada.",
+        "Pide criterios explícitos para delegar o descartar."
+      ],
+      "relacionados": [
+        4,
+        18,
+        6
+      ]
+    },
+    {
+      "numero": 14,
+      "id": "resolucion-de-problemas-basada-en-analogias",
+      "titulo": "Resolución de problemas basada en analogías",
+      "familia": "rep",
+      "plantilla": "Problema: {p}. Campo: {c}. Encuentra 2-3 desafíos similares de otros campos, explica la lección clave de cada uno y muestra cómo se aplica aquí. Termina con la mejor recomendación basada en la analogía más fuerte.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "descríbelo"
+        },
+        {
+          "clave": "c",
+          "etiqueta": "Campo",
+          "marcador": "dominio"
+        }
+      ],
+      "ejemplo": {
+        "p": "el conocimiento que produce un grupo académico se dispersa y se pierde cuando rotan sus integrantes",
+        "c": "gestión del conocimiento en educación superior",
+        "rol": "investigador en gestión del conocimiento"
+      },
+      "obtienes": "Dos o tres problemas análogos de otros campos, sus lecciones y una recomendación.",
+      "cuandoUsarlo": "Tu campo ya agotó sus respuestas y necesitas ideas de fuera.",
+      "fundamento": "Investigación sobre razonamiento analógico en la resolución de problemas (Gick y Holyoak, 1980).",
+      "buenasPracticas": [
+        "Pide analogías de campos lejanos: suelen aportar más que las cercanas.",
+        "Pide también los límites de cada analogía, dónde deja de aplicar."
+      ],
+      "relacionados": [
+        8,
+        12,
+        3
+      ]
+    },
+    {
+      "numero": 15,
+      "id": "diagnostico-del-ciclo-de-retroalimentacion",
+      "titulo": "Diagnóstico del ciclo de retroalimentación",
+      "familia": "diag",
+      "plantilla": "Mi proceso sigue produciendo {r}. Sistema: {s}. He intentado {i}. Identifica el ciclo de retroalimentación que causa el problema, señala el punto de intervención raíz y sugiere cómo romper el ciclo en lugar de solo arreglar el resultado.",
+      "variables": [
+        {
+          "clave": "r",
+          "etiqueta": "Resultado no deseado",
+          "marcador": "resultado"
+        },
+        {
+          "clave": "s",
+          "etiqueta": "Sistema",
+          "marcador": "sistema"
+        },
+        {
+          "clave": "i",
+          "etiqueta": "Intentos",
+          "marcador": "intentos"
+        }
+      ],
+      "ejemplo": {
+        "r": "estudiantes que copian respuestas de la IA y aun así obtienen buenas calificaciones",
+        "s": "actividades asíncronas evaluadas solo por el producto final",
+        "i": "advertencias en el foro y detectores de texto generado por IA",
+        "rol": "docente de una licenciatura en línea"
+      },
+      "obtienes": "El ciclo que sostiene el problema, su punto de apalancamiento y cómo romperlo.",
+      "cuandoUsarlo": "El problema vuelve aunque corriges el resultado una y otra vez.",
+      "fundamento": "Pensamiento sistémico y los puntos de apalancamiento de Donella Meadows (1999).",
+      "buenasPracticas": [
+        "Pide que exprese el ciclo como cadena causal (A → B → C → A).",
+        "Busca ciclos que tus propias soluciones alimentan sin querer."
+      ],
+      "relacionados": [
+        1,
+        19,
+        12
+      ]
+    },
+    {
+      "numero": 16,
+      "id": "experimento-mental-de-eliminacion-de-restricciones",
+      "titulo": "Experimento mental de eliminación de restricciones",
+      "familia": "rep",
+      "plantilla": "Problema: {p}. Restricciones: {r}. Primero, describe la solución ideal sin restricciones. Luego adáptala a mi realidad, mostrando lo que puedo lograr completamente, lograr parcialmente y lo que no es factible.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "descríbelo"
+        },
+        {
+          "clave": "r",
+          "etiqueta": "Restricciones",
+          "marcador": "lista"
+        }
+      ],
+      "ejemplo": {
+        "p": "ofrecer tutoría personalizada a todos los estudiantes en riesgo de abandono",
+        "r": "un tutor por cada 200 estudiantes, sin presupuesto adicional y con estudiantes que trabajan en horario laboral",
+        "rol": "coordinador de tutorías"
+      },
+      "obtienes": "La solución ideal y su traducción a tu realidad en tres niveles: lograble, parcial y no factible.",
+      "cuandoUsarlo": "Las restricciones te impiden siquiera imaginar una buena solución.",
+      "fundamento": "El «resultado final ideal» de la metodología TRIZ de Genrich Altshuller (1984).",
+      "buenasPracticas": [
+        "Deja que la solución ideal sea audaz; recortarla es el segundo paso.",
+        "Lo «parcialmente lograble» suele ser el mejor punto de partida."
+      ],
+      "relacionados": [
+        6,
+        12,
+        4
+      ]
+    },
+    {
+      "numero": 17,
+      "id": "resolucion-de-conflictos-con-partes-interesadas",
+      "titulo": "Resolución de conflictos con partes interesadas",
+      "familia": "dec",
+      "plantilla": "Situación: {s}. Partes interesadas: {p}. Objetivos: {o}. Conflicto: {c}. Identifica los intereses reales detrás de cada posición y propón una solución que satisfaga mejor esos intereses.",
+      "variables": [
+        {
+          "clave": "s",
+          "etiqueta": "Situación",
+          "marcador": "descríbela"
+        },
+        {
+          "clave": "p",
+          "etiqueta": "Partes interesadas",
+          "marcador": "lista"
+        },
+        {
+          "clave": "o",
+          "etiqueta": "Objetivos de cada parte",
+          "marcador": "lo que cada uno quiere"
+        },
+        {
+          "clave": "c",
+          "etiqueta": "Conflicto",
+          "marcador": "descríbelo"
+        }
+      ],
+      "ejemplo": {
+        "s": "rediseño del plan de estudios de una licenciatura en línea",
+        "p": "coordinación académica, docentes, estudiantes y área de tecnología",
+        "o": "la coordinación quiere cumplir con la acreditación; los docentes, conservar sus asignaturas; los estudiantes, flexibilidad y empleabilidad; tecnología, no aumentar la carga de soporte",
+        "c": "los docentes rechazan fusionar asignaturas que la coordinación considera redundantes",
+        "rol": "integrante del comité de rediseño curricular"
+      },
+      "obtienes": "Los intereses detrás de cada postura y una propuesta que los atiende mejor.",
+      "cuandoUsarlo": "Hay posturas enfrentadas y cada parte defiende una solución distinta.",
+      "fundamento": "Negociación basada en intereses y no en posiciones (Fisher y Ury, 1981).",
+      "buenasPracticas": [
+        "Describe cada postura con las palabras de su actor, sin calificarla.",
+        "Pide opciones de beneficio mutuo, no solo un punto medio."
+      ],
+      "relacionados": [
+        8,
+        7,
+        5
+      ]
+    },
+    {
+      "numero": 18,
+      "id": "reduccion-de-la-complejidad",
+      "titulo": "Reducción de la complejidad",
+      "familia": "plan",
+      "plantilla": "Problema: {p}. Partes: {pa}. Lo que se siente abrumador: {a}. Identifica qué está conectado frente a lo separado, luego dame un modelo simple, un punto de partida y el mejor orden para abordarlo.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "descríbelo"
+        },
+        {
+          "clave": "pa",
+          "etiqueta": "Partes",
+          "marcador": "lista"
+        },
+        {
+          "clave": "a",
+          "etiqueta": "Lo que abruma",
+          "marcador": "descríbelo"
+        }
+      ],
+      "ejemplo": {
+        "p": "preparar una certificación de competencias docentes mientras imparto tres asignaturas",
+        "pa": "planeaciones didácticas, portafolio de evidencias, sesiones síncronas y retroalimentación semanal",
+        "a": "todo tiene fechas próximas y no sé por dónde empezar",
+        "rol": "docente de educación en línea"
+      },
+      "obtienes": "Un mapa de lo conectado y lo independiente, un modelo simple, un punto de partida y un orden.",
+      "cuandoUsarlo": "El problema tiene tantas piezas que no sabes por dónde empezar.",
+      "fundamento": "La segunda regla del método cartesiano: dividir cada dificultad en tantas partes como sea posible (Descartes, 1637).",
+      "buenasPracticas": [
+        "Pide un modelo que quepa en una frase o en un diagrama.",
+        "Empieza por la pieza con más conexiones: desbloquea a las demás."
+      ],
+      "relacionados": [
+        4,
+        13,
+        1
+      ]
+    },
+    {
+      "numero": 19,
+      "id": "pensamiento-de-segundo-orden",
+      "titulo": "Pensamiento de segundo orden",
+      "familia": "ant",
+      "plantilla": "Problema: {p}. Plan: {a}. Resultado esperado: {r}. Analiza los efectos de segundo y tercer orden, señala los riesgos principales y sugiere una versión más segura que preserve los beneficios.",
+      "variables": [
+        {
+          "clave": "p",
+          "etiqueta": "Problema",
+          "marcador": "problema"
+        },
+        {
+          "clave": "a",
+          "etiqueta": "Plan",
+          "marcador": "acción"
+        },
+        {
+          "clave": "r",
+          "etiqueta": "Resultado esperado",
+          "marcador": "resultado"
+        }
+      ],
+      "ejemplo": {
+        "p": "bajo rendimiento en la unidad 2 del curso",
+        "a": "hacer obligatorio el uso de un tutor de IA para todas las tareas",
+        "r": "mejorar las calificaciones en un 15 %",
+        "rol": "docente responsable de la asignatura"
+      },
+      "obtienes": "Las consecuencias de las consecuencias, los riesgos principales y una versión más prudente del plan.",
+      "cuandoUsarlo": "Una solución parece obvia y quieres saber qué provocará después.",
+      "fundamento": "El pensamiento de segundo nivel descrito por Howard Marks (2011).",
+      "buenasPracticas": [
+        "Pide efectos sobre actores distintos: estudiantes, docentes e institución.",
+        "Pregunta por plazos distintos: una semana, un semestre, un año."
+      ],
+      "relacionados": [
+        11,
+        7,
+        5
+      ]
+    },
+    {
+      "numero": 20,
+      "id": "analisis-post-mortem-para-prevencion-futura",
+      "titulo": "Análisis post-mortem para prevención futura",
+      "familia": "diag",
+      "plantilla": "Fallo: {f}. Esperado: {e}. Decisiones: {d}. Identifica qué salió mal, señales de advertencia perdidas, suposiciones erróneas y 3-5 formas de prevenir que se repita.",
+      "variables": [
+        {
+          "clave": "f",
+          "etiqueta": "Fallo",
+          "marcador": "descríbelo"
+        },
+        {
+          "clave": "e",
+          "etiqueta": "Resultado esperado",
+          "marcador": "resultado"
+        },
+        {
+          "clave": "d",
+          "etiqueta": "Decisiones tomadas",
+          "marcador": "lista"
+        }
+      ],
+      "ejemplo": {
+        "f": "el taller de formación docente en IA tuvo 40 % de deserción",
+        "e": "85 % de acreditación",
+        "d": "formato 100 % asíncrono, duración de seis semanas y lanzamiento durante el cierre del periodo escolar",
+        "rol": "coordinador del taller"
+      },
+      "obtienes": "Qué falló, qué señales se pasaron por alto, qué supuestos fueron erróneos y cómo evitar que se repita.",
+      "cuandoUsarlo": "Algo ya salió mal y quieres aprender de ello sin buscar culpables.",
+      "fundamento": "La revisión posterior a la acción (After Action Review) del Ejército de EE. UU. y los postmortems sin culpa de la ingeniería de confiabilidad (Beyer et al., 2016).",
+      "buenasPracticas": [
+        "Enfócate en decisiones y sistemas, no en personas.",
+        "Convierte cada lección en una acción con responsable y fecha."
+      ],
+      "relacionados": [
+        1,
+        15,
+        11
+      ]
+    }
+  ]
+}

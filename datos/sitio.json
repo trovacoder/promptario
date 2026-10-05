@@ -1,0 +1,51 @@
+{
+  "_leeme": "Datos generales del sitio. Al publicar una versión nueva, actualiza «version» y «fechaVersion» aquí, agrega la entrada en versiones.json y cambia también la versión en CITATION.cff.",
+  "nombre": "Promptario",
+  "titulo": "Promptario: marcos de trabajo para la elaboración de prompts",
+  "descripcion": "Marcos de trabajo para elaborar prompts y prompts para resolver problemas, con pasos, ejemplos educativos, fundamentos y un constructor. Para docentes y estudiantes.",
+  "lema": "Promptario, del latín *promptarium*: donde se guarda lo que está listo para usarse.",
+  "principio": "El marco importa menos que el pensamiento que hay detrás.",
+  "url": "https://promptario.work",
+  "idioma": "es-MX",
+  "version": "1.0.0",
+  "fechaVersion": "2026-10-03",
+  "anioPublicacion": 2026,
+  "doi": "",
+  "repositorio": "",
+  "autor": {
+    "nombre": "Alejandro De Fuentes Martínez",
+    "nombreCompleto": "Dr. Alejandro De Fuentes Martínez",
+    "apellidosCita": "De Fuentes Martínez",
+    "inicialesCita": "A.",
+    "orcid": "https://orcid.org/0000-0001-8176-7542",
+    "web": "https://alexdefuentes.work",
+    "rol": "Idea, dirección académica y curaduría de contenidos"
+  },
+  "colaboracionIA": {
+    "nombre": "Claude (Anthropic)",
+    "rol": "Asistente de IA para el diseño, la programación y el maquetado web"
+  },
+  "licencias": {
+    "contenido": { "nombre": "CC BY 4.0", "url": "https://creativecommons.org/licenses/by/4.0/deed.es" },
+    "codigo": { "nombre": "MIT", "url": "https://opensource.org/license/mit" }
+  },
+  "versionHistorica": {
+    "url": "https://prompting-frameworks.netlify.app/",
+    "descripcion": "Versión inicial de septiembre de 2026, conservada como registro de la idea original"
+  },
+  "talleres": {
+    "contactoUrl": "https://alexdefuentes.work",
+    "contactoTexto": "alexdefuentes.work"
+  },
+  "portada": {
+    "gavetero": ["rtf", "costar", "crispe", "care-nng", "rise", "star", "grow", "soap", "five-s", "rita-info", "clear-lo", "icio"],
+    "necesidades": [
+      { "texto": "Enseñar a principiantes a escribir prompts", "enlace": "/marcos/guia/#ensenar-a-principiantes" },
+      { "texto": "Diseñar materiales, secuencias o rúbricas", "enlace": "/marcos/guia/#disenar-materiales-secuencias-o-rubricas" },
+      { "texto": "Crear un asistente para el aula", "enlace": "/marcos/guia/#crear-un-asistente-o-gpt-para-el-aula" },
+      { "texto": "Entender por qué pasa un problema", "enlace": "/resolver-problemas/guia/#entender-por-que-pasa-algo" },
+      { "texto": "Elegir entre dos o más opciones", "enlace": "/resolver-problemas/guia/#elegir-entre-dos-opciones" },
+      { "texto": "Prever qué puede salir mal", "enlace": "/resolver-problemas/guia/#prever-que-puede-salir-mal" }
+    ]
+  }
+}

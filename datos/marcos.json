@@ -1,0 +1,2922 @@
+{
+  "_leeme": "Contenido de la sección Marcos de trabajo. Consulta README.md, apartado «Editar el contenido», antes de modificar este archivo.",
+  "paleta": [
+    "#35a44a",
+    "#e3b800",
+    "#1f93d6",
+    "#b3287c",
+    "#6fa8dc",
+    "#e8762c"
+  ],
+  "categorias": {
+    "basicos": {
+      "nombre": "Básicos y compuestos",
+      "color": "#1f8a7e",
+      "icono": "🧱",
+      "descripcion": "Plantillas generales que combinan rol, contexto, tarea, formato y ejemplos."
+    },
+    "problemas": {
+      "nombre": "Resolución de problemas y análisis",
+      "color": "#2f63c7",
+      "icono": "🔍",
+      "descripcion": "Marcos que van del diagnóstico a los pasos y la salida esperada."
+    },
+    "planeacion": {
+      "nombre": "Planeación y metas",
+      "color": "#b7800f",
+      "icono": "🗓️",
+      "descripcion": "Del estado actual a un plan de acción."
+    },
+    "comunicacion": {
+      "nombre": "Comunicación y persuasión",
+      "color": "#8446b8",
+      "icono": "📣",
+      "descripcion": "Estructuras de argumentación tomadas del copywriting y las ventas."
+    },
+    "educativos": {
+      "nombre": "Específicamente educativos",
+      "color": "#2f8a33",
+      "icono": "🎓",
+      "descripcion": "Marcos creados o documentados para docentes y alfabetización informacional."
+    }
+  },
+  "evidencias": {
+    "aca": "Académica",
+    "ins": "Institucional",
+    "div": "Divulgativa",
+    "ada": "Adaptada de otro campo"
+  },
+  "elementosComunes": [
+    {
+      "icono": "🎭",
+      "elemento": "Rol / persona",
+      "funcion": "Fija la perspectiva, la experiencia y el registro",
+      "apareceComo": "R de RTF, RACE, RISE, RITA; Persona en Google"
+    },
+    {
+      "icono": "🗺️",
+      "elemento": "Contexto",
+      "funcion": "Información de fondo: nivel, grupo, currículo, restricciones",
+      "apareceComo": "C de CARE, CO-STAR, CLEAR; S1 del Five S"
+    },
+    {
+      "icono": "✅",
+      "elemento": "Tarea / objetivo",
+      "funcion": "Qué hacer, con un verbo explícito",
+      "apareceComo": "T de RTF, TAG, TAO; A de RACE"
+    },
+    {
+      "icono": "👥",
+      "elemento": "Audiencia",
+      "funcion": "Para quién es el resultado",
+      "apareceComo": "A de CO-STAR; Audiencia en «Elementos de un buen prompt»"
+    },
+    {
+      "icono": "📄",
+      "elemento": "Formato / salida",
+      "funcion": "Estructura, extensión, tipo de producto",
+      "apareceComo": "F de RTF, E de RACE y RISE, R de CO-STAR"
+    },
+    {
+      "icono": "🚧",
+      "elemento": "Restricciones / límites",
+      "funcion": "Qué evitar, extensión, fuentes permitidas",
+      "apareceComo": "Reglas en CARE, Acotación en RISEN, Límites"
+    },
+    {
+      "icono": "💡",
+      "elemento": "Ejemplos",
+      "funcion": "Muestran el resultado deseado (few-shot)",
+      "apareceComo": "E de CARE, RODES, CREATE"
+    },
+    {
+      "icono": "🔖",
+      "elemento": "Fuente / delimitadores",
+      "funcion": "Separan instrucciones de materiales",
+      "apareceComo": "Guías de OpenAI y Anthropic"
+    },
+    {
+      "icono": "🔁",
+      "elemento": "Iteración / retroalimentación",
+      "funcion": "Refinar en varias rondas",
+      "apareceComo": "S5 del Five S, A de RITA, R de CLEAR (Lo), E de CRISPE y BROKE"
+    }
+  ],
+  "necesidades": [
+    {
+      "necesidad": "Enseñar a principiantes",
+      "marcos": [
+        "rtf",
+        "ptcf",
+        "five-s"
+      ],
+      "razon": "Una progresión de 3 a 5 elementos con iteración explícita."
+    },
+    {
+      "necesidad": "Diseñar materiales, secuencias o rúbricas",
+      "marcos": [
+        "five-s",
+        "care-nng"
+      ],
+      "razon": "Especificidad, formato y reglas."
+    },
+    {
+      "necesidad": "Crear un asistente o GPT para el aula",
+      "marcos": [
+        "rita-info"
+      ],
+      "razon": "La IA entrevista al docente antes de producir."
+    },
+    {
+      "necesidad": "Tutoría conversacional o socrática",
+      "marcos": [
+        "rita-inter",
+        "grow"
+      ],
+      "razon": "Definen la relación pedagógica y hacen preguntas."
+    },
+    {
+      "necesidad": "Investigación y búsqueda de información",
+      "marcos": [
+        "clear-lo",
+        "icio"
+      ],
+      "razon": "Principios críticos y trabajo sobre textos aportados."
+    },
+    {
+      "necesidad": "Resolver problemas escolares o institucionales",
+      "marcos": [
+        "star",
+        "rise",
+        "5w1h"
+      ],
+      "razon": "Diagnóstico, pasos y salida definida."
+    },
+    {
+      "necesidad": "Planear metas o desarrollo profesional",
+      "marcos": [
+        "grow",
+        "soap"
+      ],
+      "razon": "Del estado actual al plan."
+    },
+    {
+      "necesidad": "Comunicar a familias o a la comunidad",
+      "marcos": [
+        "costar"
+      ],
+      "razon": "Controla el estilo, el tono y la audiencia."
+    },
+    {
+      "necesidad": "Escritura persuasiva (proyectos, convocatorias)",
+      "marcos": [
+        "bab",
+        "fab",
+        "pastor"
+      ],
+      "razon": "Estructuras de argumentación probadas en el copywriting."
+    },
+    {
+      "necesidad": "Obtener variantes creativas",
+      "marcos": [
+        "crispe",
+        "create"
+      ],
+      "razon": "Incluyen «Experimento» y «Ejemplos»."
+    }
+  ],
+  "secuenciaGenerica": [
+    "Objetivo de aprendizaje",
+    "Rol",
+    "Contexto y audiencia",
+    "Tarea con verbo",
+    "Formato y límites",
+    "Ejemplos",
+    "Respuesta de la IA",
+    "Verificación humana",
+    "Retroalimentación e iteración"
+  ],
+  "marcos": [
+    {
+      "id": "rtf",
+      "sigla": "RTF",
+      "nombreIngles": "Role, Task, Format",
+      "nombreEspanol": "Rol, Tarea, Formato",
+      "categoria": "basicos",
+      "icono": "📝",
+      "evidencia": "div",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Sin autor identificable. Lo recogen guías universitarias en español (J. Oyarzo, Universidad de Alcalá). Existe la variante Request, Task, Format (Solicitud, Tarea, Formato), en la que el formato es opcional.",
+      "descripcion": "Es el esquema más breve y el mejor punto de partida: indica quién responde, qué debe hacer y cómo debe entregar el resultado.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Define quién responde: perspectiva, nivel de experiencia y registro discursivo."
+        },
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "✅",
+          "descripcion": "Indica qué debe hacer exactamente, con un verbo de acción explícito."
+        },
+        {
+          "letra": "F",
+          "ingles": "Format",
+          "espanol": "Formato",
+          "icono": "📄",
+          "descripcion": "Especifica cómo entregar el resultado: tabla, diálogo, lista, extensión."
+        }
+      ],
+      "usos": [
+        "Consultas rápidas",
+        "Materiales breves",
+        "Práctica de idiomas"
+      ],
+      "buenasPracticas": [
+        "Usa un verbo de acción en la Tarea (explica, resume, compara, genera).",
+        "Concreta el Formato: tipo de producto, extensión y estructura.",
+        "Si la salida resulta genérica, añade contexto: nivel, grupo y propósito."
+      ],
+      "ejemplo": {
+        "fuente": "Imagen 2 · Esquemas para redactar prompts",
+        "segmentos": [
+          [
+            0,
+            "Eres un maestro de inglés para alumnos de nivel básico. Sé comprensivo y paciente. Usa siempre vocabulario accesible."
+          ],
+          [
+            1,
+            "Ayúdame a practicar una conversación sobre el tema «At the park»."
+          ],
+          [
+            2,
+            "Genera un diálogo breve en inglés con preguntas y respuestas simples, y proporciona la traducción al español de cada línea."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres docente de ciencias de 2.º de secundaria."
+          ],
+          [
+            1,
+            "Explica la diferencia entre masa y peso con dos analogías cotidianas."
+          ],
+          [
+            2,
+            "Entrégalo en una tabla de dos columnas: analogía y concepto que ilustra."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tao",
+      "sigla": "TAO",
+      "nombreIngles": "Task, Action, Objective",
+      "nombreEspanol": "Tarea, Acción, Objetivo",
+      "categoria": "basicos",
+      "icono": "🎯",
+      "evidencia": "div",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Divulgativa (infografía «ChatGPT: esquema de prompts» de @anacarolinatz). Es pariente cercano de TAG.",
+      "descripcion": "Encarga una tarea, describe la acción que se espera de la IA y hace explícita la finalidad del trabajo.",
+      "pasos": [
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "📌",
+          "descripcion": "Encarga la tarea y el rol desde el que se aborda."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Describe la acción esperada de la IA, incluso si es iterativa (conforme te presente mis ideas…)."
+        },
+        {
+          "letra": "O",
+          "ingles": "Objective",
+          "espanol": "Objetivo",
+          "icono": "🎯",
+          "descripcion": "Explicita la finalidad o el criterio de calidad del resultado."
+        }
+      ],
+      "usos": [
+        "Acompañamiento continuado en un proyecto",
+        "Diseño instruccional",
+        "Revisión de borradores"
+      ],
+      "buenasPracticas": [
+        "Formula el Objetivo en términos de aprendizaje o de calidad del recurso.",
+        "Indica si la acción es única o se repetirá a lo largo de la conversación.",
+        "Declara criterios pedagógicos explícitos para la retroalimentación."
+      ],
+      "ejemplo": {
+        "fuente": "Imagen 3 · Esquemas para redactar prompts",
+        "segmentos": [
+          [
+            0,
+            "Eres un experto en diseño instruccional. Tu tarea es auxiliarme en el diseño de un objeto de aprendizaje para nivel secundaria."
+          ],
+          [
+            1,
+            "Conforme te presente mis ideas, tu acción será ofrecer retroalimentación constructiva y sugerencias basadas en buenas prácticas pedagógicas."
+          ],
+          [
+            2,
+            "El objetivo es crear un recurso educativo claro, atractivo y efectivo para estudiantes de secundaria."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres especialista en evaluación. Tu tarea es acompañarme a redactar reactivos de opción múltiple de historia."
+          ],
+          [
+            1,
+            "Cada vez que te comparta un reactivo, señala ambigüedades y propón distractores plausibles."
+          ],
+          [
+            2,
+            "El objetivo es un examen válido que detecte errores conceptuales frecuentes."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "tag",
+      "sigla": "TAG",
+      "nombreIngles": "Task, Action, Goal",
+      "nombreEspanol": "Tarea, Acción, Meta",
+      "categoria": "basicos",
+      "icono": "🏷️",
+      "evidencia": "div",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Divulgativa, sin autoría clara. Aparece en listas de LinkedIn desde agosto de 2023; una guía de la biblioteca de Buffalo State cita una infografía de Khizer Abbas (2023).",
+      "descripcion": "Tres piezas para encargos operativos: la tarea concreta, lo que hay que hacer y el fin que se persigue.",
+      "pasos": [
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "📌",
+          "descripcion": "Define la tarea específica."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Describe lo que hay que hacer y con qué criterios."
+        },
+        {
+          "letra": "G",
+          "ingles": "Goal",
+          "espanol": "Meta",
+          "icono": "🏁",
+          "descripcion": "Explica el fin; mejor si es verificable."
+        }
+      ],
+      "usos": [
+        "Encargos operativos breves",
+        "Retroalimentación masiva",
+        "Tareas administrativas docentes"
+      ],
+      "buenasPracticas": [
+        "Haz que la Meta sea verificable (p. ej., que cada estudiante sepa qué corregir).",
+        "Adjunta la rúbrica o los criterios que debe aplicar la Acción."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Tarea: redactar retroalimentación para 25 ensayos."
+          ],
+          [
+            1,
+            "Acción: comenta fortalezas y una mejora prioritaria por ensayo, según la rúbrica adjunta."
+          ],
+          [
+            2,
+            "Meta: que cada estudiante sepa qué revisar en su próximo borrador."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ape",
+      "sigla": "APE",
+      "nombreIngles": "Action, Purpose, Expectation",
+      "nombreEspanol": "Acción, Propósito, Expectativa",
+      "categoria": "basicos",
+      "icono": "⚡",
+      "evidencia": "div",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Divulgativa, sin autoría clara (listas de LinkedIn, agosto de 2023). No debe confundirse con Automatic Prompt Engineer (Zhou et al., 2022), un método académico distinto. Algunas fuentes lo desarrollan como Action, Parameter, Example.",
+      "descripcion": "Pide una acción, explica para qué se necesita y describe con precisión el resultado esperado.",
+      "pasos": [
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "La acción concreta que debe realizar la IA."
+        },
+        {
+          "letra": "P",
+          "ingles": "Purpose",
+          "espanol": "Propósito",
+          "icono": "🎯",
+          "descripcion": "Para qué se necesita el producto y en qué situación se usará."
+        },
+        {
+          "letra": "E",
+          "ingles": "Expectation",
+          "espanol": "Expectativa",
+          "icono": "📦",
+          "descripcion": "Cómo debe ser el resultado: estructura, extensión, columnas."
+        }
+      ],
+      "usos": [
+        "Instrumentos de evaluación",
+        "Materiales con uso definido"
+      ],
+      "buenasPracticas": [
+        "El Propósito orienta el nivel de dificultad: nómbralo con el grupo y el momento de la evaluación.",
+        "Describe la Expectativa como si fuera la plantilla del producto final."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Genera 10 preguntas de opción múltiple sobre la Revolución Mexicana."
+          ],
+          [
+            1,
+            "Servirán como evaluación diagnóstica de 3.º de secundaria."
+          ],
+          [
+            2,
+            "Entrégalas en una tabla con pregunta, opciones, respuesta correcta y el error conceptual que detecta cada distractor."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "era",
+      "sigla": "ERA",
+      "nombreIngles": "Expectation, Role, Action",
+      "nombreEspanol": "Expectativa, Rol, Acción",
+      "categoria": "basicos",
+      "icono": "🔭",
+      "evidencia": "div",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Divulgativa, sin autoría clara.",
+      "descripcion": "Coloca primero el resultado esperado, lo que resulta útil cuando el formato es lo más importante del encargo.",
+      "pasos": [
+        {
+          "letra": "E",
+          "ingles": "Expectation",
+          "espanol": "Expectativa",
+          "icono": "📦",
+          "descripcion": "El producto final que esperas, descrito al inicio."
+        },
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Quién debe responder."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Qué debe hacer para producir ese resultado."
+        }
+      ],
+      "usos": [
+        "Rúbricas, listas de cotejo y plantillas",
+        "Productos con formato estricto"
+      ],
+      "buenasPracticas": [
+        "Describe la Expectativa con el número de niveles, columnas o secciones.",
+        "Mantén la Acción breve: el peso está en la Expectativa."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Espero una rúbrica analítica de 4 niveles en formato de tabla."
+          ],
+          [
+            1,
+            "Actúa como evaluador experto en expresión oral."
+          ],
+          [
+            2,
+            "Diseña la rúbrica para exposiciones de 5 minutos en bachillerato."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "ptcf",
+      "sigla": "PTCF",
+      "variante": "Google",
+      "nombreIngles": "Persona, Task, Context, Format",
+      "nombreEspanol": "Persona, Tarea, Contexto, Formato",
+      "categoria": "basicos",
+      "icono": "🧩",
+      "evidencia": "ins",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Institucional: Prompting guide 101 de Gemini para Google Workspace. Google aclara que no es necesario usar las cuatro áreas, pero combinar varias mejora la respuesta, y que el verbo de la tarea es el componente más importante.",
+      "descripcion": "Esquema oficial de Google: quién eres o quién responde, qué necesitas, en qué situación y cómo lo quieres.",
+      "pasos": [
+        {
+          "letra": "P",
+          "ingles": "Persona",
+          "espanol": "Persona",
+          "icono": "🎭",
+          "descripcion": "Quién eres tú o qué papel adopta la IA."
+        },
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "✅",
+          "descripcion": "Qué necesitas, con un verbo claro (el componente más importante)."
+        },
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "La situación, el proyecto o los documentos de referencia."
+        },
+        {
+          "letra": "F",
+          "ingles": "Format",
+          "espanol": "Formato",
+          "icono": "📄",
+          "descripcion": "Cómo presentar el resultado."
+        }
+      ],
+      "usos": [
+        "Uso general en Gemini y Google Workspace",
+        "Comunicados y documentos escolares"
+      ],
+      "buenasPracticas": [
+        "Usa lenguaje natural y frases completas.",
+        "Sé específico e itera sobre la respuesta.",
+        "Sé conciso y evita la jerga.",
+        "Aporta tus propios documentos como contexto."
+      ],
+      "ejemplo": {
+        "fuente": "Guía de Google (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Soy gestor de proyectos"
+          ],
+          [
+            1,
+            "y necesito crear un seguimiento detallado de proyecto"
+          ],
+          [
+            2,
+            "para el rediseño de un sitio web"
+          ],
+          [
+            3,
+            "en una tabla sencilla con campos de fechas, estado y tareas."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Soy coordinadora académica de bachillerato."
+          ],
+          [
+            1,
+            "Redacta un comunicado a las familias"
+          ],
+          [
+            2,
+            "sobre el nuevo calendario de evaluaciones del segundo parcial,"
+          ],
+          [
+            3,
+            "en tres párrafos breves y una lista de fechas."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "poacl",
+      "sigla": "POACL",
+      "variante": "Buen prompt",
+      "nombreIngles": "Persona, Objective, Audience, Context, Boundaries",
+      "nombreEspanol": "Persona, Objetivo, Audiencia, Contexto, Límites",
+      "categoria": "basicos",
+      "icono": "🧭",
+      "evidencia": "div",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Divulgativa: infografía «Elements of a Good Prompt» (Elementos de un buen prompt), de autor no localizado. Se asemeja al esquema de Google con Audiencia y Límites añadidos.",
+      "descripcion": "Cinco elementos que convierten una petición vaga en una instrucción situada: quién, qué, para quién, por qué y con qué restricciones.",
+      "pasos": [
+        {
+          "letra": "P",
+          "ingles": "Persona",
+          "espanol": "Persona",
+          "icono": "🎭",
+          "descripcion": "Pide a la herramienta que adopte un rol."
+        },
+        {
+          "letra": "O",
+          "ingles": "Objective",
+          "espanol": "Objetivo",
+          "icono": "🎯",
+          "descripcion": "Qué quieres que haga la IA."
+        },
+        {
+          "letra": "A",
+          "ingles": "Audience",
+          "espanol": "Audiencia",
+          "icono": "👥",
+          "descripcion": "Para quién es el resultado."
+        },
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Qué necesita saber la herramienta."
+        },
+        {
+          "letra": "L",
+          "ingles": "Boundaries",
+          "espanol": "Límites",
+          "icono": "🚧",
+          "descripcion": "Fija tu propia dirección y restricciones: extensión, tono, alcance."
+        }
+      ],
+      "usos": [
+        "Explicaciones adaptadas a un estudiante",
+        "Materiales de repaso"
+      ],
+      "buenasPracticas": [
+        "Da instrucciones claras con verbos como explica, traduce, resume o compara.",
+        "Aporta contexto: menciona el tipo de proyecto (relato breve, informe, esquema).",
+        "Itera y experimenta: el prompting es como un experimento que puede requerir varias rondas."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «Elements of a Good Prompt» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Actúa como un tutor servicial que desglosa temas complejos en explicaciones sencillas."
+          ],
+          [
+            1,
+            "Quiero que expliques el proceso de la fotosíntesis"
+          ],
+          [
+            2,
+            "a un estudiante de 14 años,"
+          ],
+          [
+            3,
+            "para ayudarle a preparar su examen de biología."
+          ],
+          [
+            4,
+            "Tu respuesta debe tener 300 palabras, con un tono amigable y educativo."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "care-nng",
+      "sigla": "CARE",
+      "variante": "NN/g",
+      "nombreIngles": "Context, Ask, Rules, Examples",
+      "nombreEspanol": "Contexto, Petición, Reglas, Ejemplos",
+      "categoria": "basicos",
+      "icono": "🤝",
+      "evidencia": "ins",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Institucional: Kate Moran, Nielsen Norman Group (24 de mayo de 2024), para «escribir prompts con cuidado» (CAREfully). NN/g aclara que no hace falta seguir un orden estricto y que las tareas sencillas no requieren tanto detalle.",
+      "descripcion": "Estructura para tareas con restricciones: situar, pedir, poner reglas y mostrar ejemplos del resultado deseado.",
+      "pasos": [
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Describe la situación."
+        },
+        {
+          "letra": "A",
+          "ingles": "Ask",
+          "espanol": "Petición",
+          "icono": "🗣️",
+          "descripcion": "Solicita una acción específica."
+        },
+        {
+          "letra": "R",
+          "ingles": "Rules",
+          "espanol": "Reglas",
+          "icono": "📏",
+          "descripcion": "Proporciona las restricciones."
+        },
+        {
+          "letra": "E",
+          "ingles": "Examples",
+          "espanol": "Ejemplos",
+          "icono": "💡",
+          "descripcion": "Muestra lo que quieres (o lo que no quieres)."
+        }
+      ],
+      "usos": [
+        "Actividades con restricciones de tiempo o contenido",
+        "Tareas donde un ejemplo aclara la expectativa"
+      ],
+      "buenasPracticas": [
+        "Cierra con: «Pregúntame la información adicional que necesites; si no necesitas nada más, completa los pasos».",
+        "Los ejemplos concretos reducen la ambigüedad más que las descripciones largas.",
+        "No fuerces el orden: lo importante es que estén los cuatro elementos."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Doy Formación Cívica en 3.º de secundaria; mis alumnos analizan noticias sobre procesos electorales."
+          ],
+          [
+            1,
+            "Diseña una actividad de 50 minutos para distinguir hechos de opiniones."
+          ],
+          [
+            2,
+            "Sin temas partidistas, con lenguaje neutral y en una página como máximo."
+          ],
+          [
+            3,
+            "Por ejemplo: «La jornada inició a las 8:00» es un hecho; «Fue una jornada ejemplar» es una opinión."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "care-b",
+      "sigla": "CARE",
+      "variante": "Variante",
+      "nombreIngles": "Context, Action, Result, Example",
+      "nombreEspanol": "Contexto, Acción, Resultados, Ejemplos",
+      "categoria": "basicos",
+      "icono": "🧮",
+      "evidencia": "div",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Divulgativa (infografía de @anacarolinatz y otras). Cambia «Reglas» por «Resultados», es decir, criterios de logro.",
+      "descripcion": "Variante que sustituye las reglas por los resultados esperados, útil para tutorías con verificación de la comprensión.",
+      "pasos": [
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Rol y enfoque desde el que se trabaja."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Qué debe hacer, paso a paso si procede."
+        },
+        {
+          "letra": "R",
+          "ingles": "Result",
+          "espanol": "Resultados",
+          "icono": "🏆",
+          "descripcion": "Criterios de logro: qué debe demostrar el estudiante."
+        },
+        {
+          "letra": "E",
+          "ingles": "Example",
+          "espanol": "Ejemplos",
+          "icono": "💡",
+          "descripcion": "Cómo empezar o qué estrategia concreta usar."
+        }
+      ],
+      "usos": [
+        "Tutoría paso a paso",
+        "Resolución guiada de ejercicios"
+      ],
+      "buenasPracticas": [
+        "Redacta los Resultados como evidencias observables.",
+        "Pide verificación de la comprensión antes de avanzar."
+      ],
+      "ejemplo": {
+        "fuente": "Imagen 4 · Esquemas para redactar prompts",
+        "segmentos": [
+          [
+            0,
+            "Actúas como tutor de matemáticas para nivel secundaria, con un enfoque pedagógico y comprensivo."
+          ],
+          [
+            1,
+            "Explica paso a paso cómo se resuelve la ecuación «seis menos cinco equis más dos equis igual a ocho menos cuatro equis», avanzando gradualmente y verificando la comprensión del estudiante después de cada paso antes de continuar."
+          ],
+          [
+            2,
+            "Verifica que el estudiante entienda la resolución de la ecuación y pueda justificar lo que se hace en cada paso."
+          ],
+          [
+            3,
+            "Comienza traduciendo el enunciado verbal al lenguaje algebraico y utiliza preguntas de verificación constantes para confirmar la comprensión."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "race",
+      "sigla": "RACE",
+      "nombreIngles": "Role, Action, Context, Expectation",
+      "nombreEspanol": "Rol, Acción, Contexto, Expectativa",
+      "categoria": "basicos",
+      "icono": "🏁",
+      "evidencia": "div",
+      "evidenciaTexto": "Divulgativa / Institucional",
+      "complejidad": "Baja-media",
+      "nivel": "Inicial",
+      "origen": "La versión más antigua localizada es de Trust Insights (Christopher S. Penn y Katie Robbert, 2023), con Execute (Ejecutar) como cuarto elemento. La variante con Expectation se difundió en LinkedIn en 2023 sin autor claro. No debe confundirse con el modelo de marketing RACE (Reach, Act, Convert, Engage).",
+      "descripcion": "Obtén respuestas claras y estructuradas.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Define el papel de la IA."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Especifica la tarea."
+        },
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Añade antecedentes."
+        },
+        {
+          "letra": "E",
+          "ingles": "Expectation",
+          "espanol": "Expectativa",
+          "icono": "📦",
+          "descripcion": "Indica el formato de salida deseado."
+        }
+      ],
+      "usos": [
+        "Respuestas estructuradas",
+        "Planes y campañas"
+      ],
+      "buenasPracticas": [
+        "El Contexto debe incluir las restricciones reales (recursos, población, tiempo).",
+        "Especifica la Expectativa con columnas o secciones."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Actúa como experto en marketing."
+          ],
+          [
+            1,
+            "Escribe una estrategia de redes sociales para una nueva app."
+          ],
+          [
+            2,
+            "Incluye el público objetivo y las ideas de contenido"
+          ],
+          [
+            3,
+            "y un plan de 30 días en una tabla."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Actúa como asesor pedagógico."
+          ],
+          [
+            1,
+            "Diseña una campaña de lectura para primaria."
+          ],
+          [
+            2,
+            "La escuela tiene una biblioteca pequeña y alumnos de contextos rurales."
+          ],
+          [
+            3,
+            "Entrega un calendario de 4 semanas en tabla, con actividad, materiales y evidencia de logro."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "costar",
+      "sigla": "CO-STAR",
+      "nombreIngles": "Context, Objective, Style, Tone, Audience, Response",
+      "nombreEspanol": "Contexto, Objetivo, Estilo, Tono, Audiencia, Respuesta",
+      "categoria": "basicos",
+      "icono": "⭐",
+      "evidencia": "ins",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Institucional: equipo de Ciencia de Datos e IA de GovTech Singapur (Prompt Engineering Playbook, 2023). Lo popularizó Sheila Teo al ganar la competencia de prompt engineering con GPT-4 organizada por GovTech (Towards Data Science, diciembre de 2023).",
+      "descripcion": "Controla con precisión el estilo, el tono y la audiencia; ideal para comunicación dirigida a públicos concretos.",
+      "pasos": [
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Antecedentes de la tarea."
+        },
+        {
+          "letra": "O",
+          "ingles": "Objective",
+          "espanol": "Objetivo",
+          "icono": "🎯",
+          "descripcion": "Qué quieres lograr."
+        },
+        {
+          "letra": "S",
+          "ingles": "Style",
+          "espanol": "Estilo",
+          "icono": "✒️",
+          "descripcion": "Estilo de escritura (divulgativo, académico, periodístico)."
+        },
+        {
+          "letra": "T",
+          "ingles": "Tone",
+          "espanol": "Tono",
+          "icono": "🎵",
+          "descripcion": "Actitud del texto (cálido, formal, tranquilizador)."
+        },
+        {
+          "letra": "A",
+          "ingles": "Audience",
+          "espanol": "Audiencia",
+          "icono": "👥",
+          "descripcion": "Para quién se escribe."
+        },
+        {
+          "letra": "R",
+          "ingles": "Response",
+          "espanol": "Respuesta",
+          "icono": "📤",
+          "descripcion": "Formato de la respuesta."
+        }
+      ],
+      "usos": [
+        "Comunicación institucional",
+        "Textos para familias",
+        "Materiales adaptados a públicos concretos"
+      ],
+      "buenasPracticas": [
+        "Separa las secciones con delimitadores (# CONTEXTO #, etiquetas XML).",
+        "Distingue estilo (cómo se escribe) de tono (qué actitud transmite).",
+        "Es menos adecuado para tareas de razonamiento complejo."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "# CONTEXTO # Escuela secundaria que implementará evaluación formativa."
+          ],
+          [
+            1,
+            "# OBJETIVO # Explicar el cambio a las familias."
+          ],
+          [
+            2,
+            "# ESTILO # Divulgativo, sin tecnicismos."
+          ],
+          [
+            3,
+            "# TONO # Cercano y tranquilizador."
+          ],
+          [
+            4,
+            "# AUDIENCIA # Madres, padres y tutores con escolaridad diversa."
+          ],
+          [
+            5,
+            "# RESPUESTA # Carta de 250 palabras y 3 preguntas frecuentes."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "crispe",
+      "sigla": "CRISPE",
+      "nombreIngles": "Capacity and Role, Insight, Statement, Personality, Experiment",
+      "nombreEspanol": "Capacidad y Rol, Perspectiva, Instrucción, Personalidad, Experimentación",
+      "categoria": "basicos",
+      "icono": "🧪",
+      "evidencia": "ins",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Matt Nigh lo publicó en GitHub (7 de febrero de 2023) para su propia experimentación. Lo aplican Vorensky et al. en ortopedia (JOSPT Methods, 2025) y lo recoge la guía de Stony Brook University.",
+      "descripcion": "Su rasgo distintivo es el «Experimento»: pedir varias alternativas para comparar y elegir.",
+      "pasos": [
+        {
+          "letra": "CR",
+          "ingles": "Capacity and Role",
+          "espanol": "Capacidad y Rol",
+          "icono": "🎭",
+          "descripcion": "Qué rol y competencias debe asumir la IA."
+        },
+        {
+          "letra": "I",
+          "ingles": "Insight",
+          "espanol": "Perspectiva",
+          "icono": "🔎",
+          "descripcion": "Contexto y antecedentes del problema."
+        },
+        {
+          "letra": "S",
+          "ingles": "Statement",
+          "espanol": "Instrucción",
+          "icono": "📌",
+          "descripcion": "Qué se le pide exactamente."
+        },
+        {
+          "letra": "P",
+          "ingles": "Personality",
+          "espanol": "Personalidad",
+          "icono": "🎵",
+          "descripcion": "Estilo o tono de la respuesta."
+        },
+        {
+          "letra": "E",
+          "ingles": "Experiment",
+          "espanol": "Experimento",
+          "icono": "🧪",
+          "descripcion": "Solicita varias versiones o alternativas."
+        }
+      ],
+      "usos": [
+        "Creatividad didáctica",
+        "Analogías y ejemplos",
+        "Comparar enfoques"
+      ],
+      "buenasPracticas": [
+        "Pide explícitamente un número de variantes (tres versiones distintas).",
+        "Pide que cada variante difiera en un aspecto (nivel, tono, recurso)."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres especialista en didáctica de las ciencias."
+          ],
+          [
+            1,
+            "Mis alumnos de 2.º de secundaria confunden masa y peso."
+          ],
+          [
+            2,
+            "Escribe una analogía para explicarlo."
+          ],
+          [
+            3,
+            "Usa un tono lúdico."
+          ],
+          [
+            4,
+            "Dame tres versiones distintas."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "create",
+      "sigla": "CREATE",
+      "nombreIngles": "Character, Request, Examples, Adjustments, Type of output, Extras",
+      "nombreEspanol": "Personaje, Petición, Ejemplos, Ajustes, Tipo de salida, Extras",
+      "categoria": "basicos",
+      "icono": "🎨",
+      "evidencia": "ins",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Dave Birss (2023, cursos de LinkedIn Learning). Es el marco con mayor adopción universitaria del grupo (University of Pittsburgh, NYU SPS, Georgia Tech, Middlesex University). Algunas versiones usan Additions (Adiciones) en lugar de Adjustments.",
+      "descripcion": "Plantilla completa para productos terminados: incluye ejemplos, ajustes finos y extras como pedir que la IA pregunte antes de responder.",
+      "pasos": [
+        {
+          "letra": "C",
+          "ingles": "Character",
+          "espanol": "Personaje",
+          "icono": "🎭",
+          "descripcion": "El rol que adopta la IA."
+        },
+        {
+          "letra": "R",
+          "ingles": "Request",
+          "espanol": "Petición",
+          "icono": "🗣️",
+          "descripcion": "Qué necesitas, con detalle."
+        },
+        {
+          "letra": "E",
+          "ingles": "Examples",
+          "espanol": "Ejemplos",
+          "icono": "💡",
+          "descripcion": "Ejemplos del resultado deseado."
+        },
+        {
+          "letra": "A",
+          "ingles": "Adjustments",
+          "espanol": "Ajustes",
+          "icono": "🔧",
+          "descripcion": "Correcciones y matices: qué evitar o cuidar."
+        },
+        {
+          "letra": "T",
+          "ingles": "Type of output",
+          "espanol": "Tipo de salida",
+          "icono": "📄",
+          "descripcion": "Formato del producto."
+        },
+        {
+          "letra": "E",
+          "ingles": "Extras",
+          "espanol": "Extras",
+          "icono": "➕",
+          "descripcion": "Instrucciones adicionales (p. ej., pregúntame antes de responder)."
+        }
+      ],
+      "usos": [
+        "Productos completos",
+        "Líneas de tiempo, guías, secuencias"
+      ],
+      "buenasPracticas": [
+        "Usa Ajustes después de ver una primera respuesta.",
+        "Un extra muy útil: «Antes de responder, hazme las preguntas que necesites»."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres profesor de historia."
+          ],
+          [
+            1,
+            "Crea una línea de tiempo de la Independencia de México."
+          ],
+          [
+            2,
+            "Ejemplo de entrada: «1810 – Grito de Dolores: inicio del movimiento»."
+          ],
+          [
+            3,
+            "Evita fechas no confirmadas."
+          ],
+          [
+            4,
+            "Salida: tabla."
+          ],
+          [
+            5,
+            "Antes de responder, pregúntame qué nivel escolar tiene el grupo."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "icio",
+      "sigla": "ICIO",
+      "nombreIngles": "Instruction, Context, Input, Output",
+      "nombreEspanol": "Instrucción, Contexto, Datos de entrada, Indicador de salida",
+      "categoria": "basicos",
+      "icono": "📥",
+      "evidencia": "ins",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Los cuatro elementos proceden de la Prompt Engineering Guide de DAIR.AI (Elvis Saravia, 2023). La sigla «ICIO» la acuñaron después blogs chinos.",
+      "descripcion": "Pensado para trabajar sobre textos o datos que el usuario aporta: resumir, clasificar o extraer.",
+      "pasos": [
+        {
+          "letra": "I",
+          "ingles": "Instruction",
+          "espanol": "Instrucción",
+          "icono": "📌",
+          "descripcion": "La tarea específica."
+        },
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Información externa o de fondo."
+        },
+        {
+          "letra": "I",
+          "ingles": "Input data",
+          "espanol": "Datos de entrada",
+          "icono": "📥",
+          "descripcion": "El texto o los datos a procesar, entre delimitadores."
+        },
+        {
+          "letra": "O",
+          "ingles": "Output indicator",
+          "espanol": "Indicador de salida",
+          "icono": "📤",
+          "descripcion": "Tipo y formato de la salida."
+        }
+      ],
+      "usos": [
+        "Análisis de respuestas de alumnos",
+        "Clasificación de textos",
+        "Extracción de información"
+      ],
+      "buenasPracticas": [
+        "Coloca los datos entre delimitadores (\"\"\" o etiquetas XML).",
+        "Pide que se ciña a los datos aportados y no invente.",
+        "Anonimiza los datos del alumnado antes de pegarlos."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Clasifica las respuestas por tipo de error."
+          ],
+          [
+            1,
+            "Contexto: examen de fracciones de 5.º de primaria."
+          ],
+          [
+            2,
+            "Datos: \"\"\"[respuestas anonimizadas]\"\"\"."
+          ],
+          [
+            3,
+            "Salida: tabla con respuesta, tipo de error y sugerencia de intervención."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "broke",
+      "sigla": "BROKE",
+      "nombreIngles": "Background, Role, Objectives, Key results, Evolve",
+      "nombreEspanol": "Antecedentes, Rol, Objetivos, Resultados clave, Evolución",
+      "categoria": "basicos",
+      "icono": "📈",
+      "evidencia": "div",
+      "complejidad": "Media-alta",
+      "nivel": "Avanzado",
+      "origen": "Chen Haopeng («陈财猫»), 2023, inspirado en la metodología OKR; autoatribuido en redes chinas.",
+      "descripcion": "Traslada la lógica de objetivos y resultados clave al prompting e incorpora la mejora continua.",
+      "pasos": [
+        {
+          "letra": "B",
+          "ingles": "Background",
+          "espanol": "Antecedentes",
+          "icono": "🗺️",
+          "descripcion": "Situación de partida."
+        },
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Quién responde."
+        },
+        {
+          "letra": "O",
+          "ingles": "Objectives",
+          "espanol": "Objetivos",
+          "icono": "🎯",
+          "descripcion": "Qué se quiere lograr."
+        },
+        {
+          "letra": "K",
+          "ingles": "Key results",
+          "espanol": "Resultados clave",
+          "icono": "📊",
+          "descripcion": "Indicadores medibles de logro."
+        },
+        {
+          "letra": "E",
+          "ingles": "Evolve",
+          "espanol": "Evolución",
+          "icono": "🔁",
+          "descripcion": "Cómo ajustar tras ver los resultados."
+        }
+      ],
+      "usos": [
+        "Planes de mejora escolar",
+        "Proyectos con indicadores"
+      ],
+      "buenasPracticas": [
+        "Formula resultados clave medibles y con plazo.",
+        "Usa la fase de Evolución para iterar con datos reales."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "En mi primaria, el 35 % de 3.º no alcanza el nivel esperado de comprensión lectora."
+          ],
+          [
+            1,
+            "Actúa como asesor técnico pedagógico."
+          ],
+          [
+            2,
+            "Objetivo: mejorar la comprensión lectora en un ciclo escolar."
+          ],
+          [
+            3,
+            "Propón tres resultados clave trimestrales medibles."
+          ],
+          [
+            4,
+            "Indica qué ajustar si al primer trimestre no se alcanzan."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "risen",
+      "sigla": "RISEN",
+      "nombreIngles": "Role, Instructions, Steps, End goal, Narrowing",
+      "nombreEspanol": "Rol, Instrucciones, Pasos, Objetivo final, Acotación",
+      "categoria": "basicos",
+      "icono": "🌅",
+      "evidencia": "div",
+      "complejidad": "Media-alta",
+      "nivel": "Avanzado",
+      "origen": "Atribuido a Kyle Balmer (redes sociales, hacia 2024). La guía de Jaime Oyarzo (Universidad de Alcalá) lo recoge con ejemplos.",
+      "descripcion": "Añade pasos explícitos y una acotación final que restringe el alcance del resultado.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Quién responde."
+        },
+        {
+          "letra": "I",
+          "ingles": "Instructions",
+          "espanol": "Instrucciones",
+          "icono": "📋",
+          "descripcion": "Qué hacer."
+        },
+        {
+          "letra": "S",
+          "ingles": "Steps",
+          "espanol": "Pasos",
+          "icono": "🪜",
+          "descripcion": "Secuencia a seguir."
+        },
+        {
+          "letra": "E",
+          "ingles": "End goal",
+          "espanol": "Objetivo final",
+          "icono": "🏁",
+          "descripcion": "Para qué sirve el resultado."
+        },
+        {
+          "letra": "N",
+          "ingles": "Narrowing",
+          "espanol": "Acotación",
+          "icono": "🚧",
+          "descripcion": "Límites: extensión, fuentes, alcance."
+        }
+      ],
+      "usos": [
+        "Tareas multicapa",
+        "Planes de estudio"
+      ],
+      "buenasPracticas": [
+        "Numera los pasos cuando el orden importe.",
+        "La acotación evita respuestas largas y dispersas."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres tutor académico."
+          ],
+          [
+            1,
+            "Elabora un plan de estudio de álgebra para un estudiante que aprende mejor con recursos visuales."
+          ],
+          [
+            2,
+            "Primero diagnostica, luego propone temas y al final actividades de repaso."
+          ],
+          [
+            3,
+            "Que llegue preparado al examen final."
+          ],
+          [
+            4,
+            "Máximo una página."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "rodes",
+      "sigla": "RODES",
+      "nombreIngles": "Role, Objective, Details, Examples, Sense check",
+      "nombreEspanol": "Rol, Objetivo, Detalles, Ejemplos, Comprobación de sentido",
+      "categoria": "basicos",
+      "icono": "🧐",
+      "evidencia": "div",
+      "complejidad": "Media-alta",
+      "nivel": "Avanzado",
+      "origen": "Divulgativa; lo documenta Jaime Oyarzo (Universidad de Alcalá).",
+      "descripcion": "Termina con una comprobación: pide a la IA que confirme que entendió el objetivo antes de producir.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Quién responde."
+        },
+        {
+          "letra": "O",
+          "ingles": "Objective",
+          "espanol": "Objetivo",
+          "icono": "🎯",
+          "descripcion": "Qué se busca."
+        },
+        {
+          "letra": "D",
+          "ingles": "Details",
+          "espanol": "Detalles",
+          "icono": "🧾",
+          "descripcion": "Requisitos y especificaciones."
+        },
+        {
+          "letra": "E",
+          "ingles": "Examples",
+          "espanol": "Ejemplos",
+          "icono": "💡",
+          "descripcion": "Muestras del estilo o resultado deseado."
+        },
+        {
+          "letra": "S",
+          "ingles": "Sense check",
+          "espanol": "Comprobación",
+          "icono": "✔️",
+          "descripcion": "Pregunta final para confirmar la comprensión."
+        }
+      ],
+      "usos": [
+        "Imitar un estilo dado",
+        "Redactar consignas homogéneas"
+      ],
+      "buenasPracticas": [
+        "Cierra con: «¿Comprendes el objetivo y las directrices?».",
+        "Aporta al menos dos ejemplos del estilo buscado."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres diseñador instruccional."
+          ],
+          [
+            1,
+            "Redacta 5 consignas de actividades para un curso en línea."
+          ],
+          [
+            2,
+            "Cada consigna debe tener propósito, instrucciones y producto esperado, en menos de 120 palabras."
+          ],
+          [
+            3,
+            "Sigue el estilo de estas dos consignas: [ejemplos]."
+          ],
+          [
+            4,
+            "¿Comprendes el objetivo y las directrices?"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "relic",
+      "sigla": "RELIC",
+      "nombreIngles": "Role, Emphasis, Limitation, Information, Challenge",
+      "nombreEspanol": "Rol, Énfasis, Limitación, Información, Desafío",
+      "categoria": "basicos",
+      "icono": "🏺",
+      "evidencia": "div",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Divulgativa, sin autoría clara (aparece en la imagen 1 del collage).",
+      "descripcion": "Incorpora un énfasis y un desafío final que obliga a pensar al estudiante.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Quién responde."
+        },
+        {
+          "letra": "E",
+          "ingles": "Emphasis",
+          "espanol": "Énfasis",
+          "icono": "🔆",
+          "descripcion": "Qué aspecto destacar."
+        },
+        {
+          "letra": "L",
+          "ingles": "Limitation",
+          "espanol": "Limitación",
+          "icono": "🚧",
+          "descripcion": "Restricciones de extensión o alcance."
+        },
+        {
+          "letra": "I",
+          "ingles": "Information",
+          "espanol": "Información",
+          "icono": "🗂️",
+          "descripcion": "Material o datos de base."
+        },
+        {
+          "letra": "C",
+          "ingles": "Challenge",
+          "espanol": "Desafío",
+          "icono": "🧗",
+          "descripcion": "Un reto o pregunta final."
+        }
+      ],
+      "usos": [
+        "Casos para debate",
+        "Actividades de pensamiento crítico"
+      ],
+      "buenasPracticas": [
+        "El desafío debe exigir argumentación, no una respuesta memorística."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres profesor de ética."
+          ],
+          [
+            1,
+            "Enfatiza el pensamiento crítico."
+          ],
+          [
+            2,
+            "Máximo 200 palabras."
+          ],
+          [
+            3,
+            "Con base en este caso: [caso]."
+          ],
+          [
+            4,
+            "Plantea al alumno un dilema final."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "trace",
+      "sigla": "TRACE",
+      "nombreIngles": "Task, Request, Action, Context, Example",
+      "nombreEspanol": "Tarea, Solicitud, Acción, Contexto, Ejemplo",
+      "categoria": "basicos",
+      "icono": "🧵",
+      "evidencia": "div",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Divulgativa, sin autoría clara. Circula otra expansión: Task, Role, Action, Context, Expectation.",
+      "descripcion": "Destaca por cerrar con un ejemplo modelo, que suele pesar más que una instrucción larga.",
+      "pasos": [
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "📌",
+          "descripcion": "El encargo general."
+        },
+        {
+          "letra": "R",
+          "ingles": "Request",
+          "espanol": "Solicitud",
+          "icono": "🗣️",
+          "descripcion": "La petición concreta."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Qué hacer para cumplirla."
+        },
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Situación y destinatarios."
+        },
+        {
+          "letra": "E",
+          "ingles": "Example",
+          "espanol": "Ejemplo",
+          "icono": "💡",
+          "descripcion": "Un modelo del resultado."
+        }
+      ],
+      "usos": [
+        "Guiones de clase",
+        "Materiales con formato fijo"
+      ],
+      "buenasPracticas": [
+        "Un buen ejemplo modelo sustituye muchas líneas de instrucciones."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Preparar una clase invertida."
+          ],
+          [
+            1,
+            "Escribe el guion de un video de 5 minutos sobre ecosistemas."
+          ],
+          [
+            2,
+            "Estructúralo en introducción, explicación y pregunta de reflexión."
+          ],
+          [
+            3,
+            "Para 1.º de secundaria, que lo verá en casa antes de la clase."
+          ],
+          [
+            4,
+            "Ejemplo de tono: «¿Sabías que un solo árbol puede ser hogar de cientos de especies?»."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "rise",
+      "sigla": "RISE",
+      "nombreIngles": "Role, Identify, Steps, Expectation",
+      "nombreEspanol": "Rol, Identificar, Pasos, Expectativa",
+      "categoria": "problemas",
+      "icono": "🚀",
+      "evidencia": "div",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Divulgativa. Circulan varias expansiones (p. ej., Role, Input, Steps, Expectation o Request, Input, Scenario, Expectation).",
+      "descripcion": "Resuelve problemas con mejor contexto.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Establece el papel de la IA."
+        },
+        {
+          "letra": "I",
+          "ingles": "Identify",
+          "espanol": "Identificar",
+          "icono": "🔍",
+          "descripcion": "Señala el problema principal."
+        },
+        {
+          "letra": "S",
+          "ingles": "Steps",
+          "espanol": "Pasos",
+          "icono": "🪜",
+          "descripcion": "Pide una solución paso a paso."
+        },
+        {
+          "letra": "E",
+          "ingles": "Expectation",
+          "espanol": "Expectativa",
+          "icono": "📦",
+          "descripcion": "Define la salida esperada."
+        }
+      ],
+      "usos": [
+        "Diagnóstico de problemas escolares",
+        "Orientación"
+      ],
+      "buenasPracticas": [
+        "Describe el problema con datos, no solo con impresiones.",
+        "Pide responsables y plazos en los pasos."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Actúa como coach de carrera."
+          ],
+          [
+            1,
+            "Identifica los retos comunes de los recién egresados en 2026."
+          ],
+          [
+            2,
+            "Ofrece soluciones paso a paso"
+          ],
+          [
+            3,
+            "y presenta la respuesta en una tabla clara."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Actúa como orientador escolar."
+          ],
+          [
+            1,
+            "Identifica por qué baja la asistencia en 1.º de bachillerato los viernes."
+          ],
+          [
+            2,
+            "Propón pasos de intervención"
+          ],
+          [
+            3,
+            "y entrégalos en una tabla con responsable y plazo."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "star",
+      "sigla": "STAR",
+      "nombreIngles": "Situation, Task, Action, Result",
+      "nombreEspanol": "Situación, Tarea, Acción, Resultado",
+      "categoria": "problemas",
+      "icono": "🌟",
+      "evidencia": "ada",
+      "evidenciaTexto": "Adaptada",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Adaptado de las entrevistas conductuales: Development Dimensions International (DDI) lo introdujo en 1974 con su sistema Targeted Selection. Su uso en prompting es divulgativo.",
+      "descripcion": "Obtén resultados estructurados y detallados.",
+      "pasos": [
+        {
+          "letra": "S",
+          "ingles": "Situation",
+          "espanol": "Situación",
+          "icono": "📍",
+          "descripcion": "Describe la situación actual."
+        },
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "📌",
+          "descripcion": "Explica la meta o tarea."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Especifica qué hacer."
+        },
+        {
+          "letra": "R",
+          "ingles": "Result",
+          "espanol": "Resultado",
+          "icono": "🏆",
+          "descripcion": "Define la salida deseada."
+        }
+      ],
+      "usos": [
+        "Diagnóstico de casos",
+        "Planes de recuperación académica"
+      ],
+      "buenasPracticas": [
+        "Aporta cifras en la Situación.",
+        "Pide causas probables antes de soluciones."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "El tráfico de nuestro sitio web ha caído."
+          ],
+          [
+            1,
+            "Analiza las posibles razones"
+          ],
+          [
+            2,
+            "y sugiere un plan de recuperación paso a paso."
+          ],
+          [
+            3,
+            "Presenta el resultado en una tabla clara."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "El 40 % de mi grupo reprobó el parcial de química."
+          ],
+          [
+            1,
+            "Necesito recuperar los aprendizajes antes del examen final."
+          ],
+          [
+            2,
+            "Diagnostica causas probables y diseña 3 sesiones de refuerzo."
+          ],
+          [
+            3,
+            "Entrega una tabla por sesión con objetivo, actividad y evidencia."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "clear-inf",
+      "sigla": "CLEAR",
+      "variante": "Infografía",
+      "nombreIngles": "Context, Learn, Evaluate, Action, Review",
+      "nombreEspanol": "Contexto, Aprender, Evaluar, Acción, Revisión",
+      "categoria": "problemas",
+      "icono": "🔎",
+      "evidencia": "div",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Divulgativa, sin autoría clara. No es el CLEAR de Leo S. Lo (2023), que se documenta en la categoría educativa.",
+      "descripcion": "Obtén respuestas enfocadas y relevantes: comprende, compara, decide y resume.",
+      "pasos": [
+        {
+          "letra": "C",
+          "ingles": "Context",
+          "espanol": "Contexto",
+          "icono": "🗺️",
+          "descripcion": "Proporciona información de fondo."
+        },
+        {
+          "letra": "L",
+          "ingles": "Learn",
+          "espanol": "Aprender",
+          "icono": "🎓",
+          "descripcion": "Especifica qué quieres aprender."
+        },
+        {
+          "letra": "E",
+          "ingles": "Evaluate",
+          "espanol": "Evaluar",
+          "icono": "⚖️",
+          "descripcion": "Pide análisis o comparación."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Solicita pasos accionables."
+        },
+        {
+          "letra": "R",
+          "ingles": "Review",
+          "espanol": "Revisión",
+          "icono": "🔁",
+          "descripcion": "Pide un resumen o los siguientes pasos."
+        }
+      ],
+      "usos": [
+        "Comparar herramientas o metodologías",
+        "Tomar decisiones informadas"
+      ],
+      "buenasPracticas": [
+        "Define los criterios de comparación.",
+        "Cierra pidiendo un resumen o una recomendación justificada."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Para una app móvil,"
+          ],
+          [
+            1,
+            "quiero entender Firebase y Supabase."
+          ],
+          [
+            2,
+            "Compáralos y analiza ventajas y desventajas"
+          ],
+          [
+            3,
+            "y recomienda cuál elegir"
+          ],
+          [
+            4,
+            "según mis necesidades."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Doy clase en secundaria con 30 alumnos y Chromebooks."
+          ],
+          [
+            1,
+            "Quiero entender la diferencia entre Moodle y Google Classroom."
+          ],
+          [
+            2,
+            "Compáralos en una tabla"
+          ],
+          [
+            3,
+            "y recomienda uno"
+          ],
+          [
+            4,
+            "y cierra con 3 pasos de implementación."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "5w1h",
+      "sigla": "5W1H",
+      "nombreIngles": "Who, What, When, Where, Why, How",
+      "nombreEspanol": "Quién, Qué, Cuándo, Dónde, Por qué, Cómo",
+      "categoria": "problemas",
+      "icono": "❓",
+      "evidencia": "ada",
+      "evidenciaTexto": "Adaptada",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Adaptado del periodismo y de la retórica clásica (las seis preguntas de la noticia). Uso divulgativo en prompting.",
+      "descripcion": "Obtén respuestas completas y bien redondeadas cubriendo las seis preguntas básicas.",
+      "pasos": [
+        {
+          "letra": "W",
+          "ingles": "Who",
+          "espanol": "Quién",
+          "icono": "👤",
+          "descripcion": "Identifica a las personas involucradas."
+        },
+        {
+          "letra": "W",
+          "ingles": "What",
+          "espanol": "Qué",
+          "icono": "📌",
+          "descripcion": "Define el tema principal."
+        },
+        {
+          "letra": "W",
+          "ingles": "When",
+          "espanol": "Cuándo",
+          "icono": "🕒",
+          "descripcion": "Menciona el momento o la cronología."
+        },
+        {
+          "letra": "W",
+          "ingles": "Where",
+          "espanol": "Dónde",
+          "icono": "📍",
+          "descripcion": "Especifica el lugar o la plataforma."
+        },
+        {
+          "letra": "W",
+          "ingles": "Why",
+          "espanol": "Por qué",
+          "icono": "❓",
+          "descripcion": "Explica la razón."
+        },
+        {
+          "letra": "H",
+          "ingles": "How",
+          "espanol": "Cómo",
+          "icono": "🛠️",
+          "descripcion": "Pide el proceso o los pasos."
+        }
+      ],
+      "usos": [
+        "Estudios de caso",
+        "Explicaciones completas",
+        "Verificación de noticias"
+      ],
+      "buenasPracticas": [
+        "Útil para que el alumnado verifique si una respuesta de IA cubre todo.",
+        "Pide que marque qué preguntas no puede responder con certeza."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            1,
+            "Explica cómo funcionan los pagos móviles en la India:"
+          ],
+          [
+            0,
+            "quién los usa,"
+          ],
+          [
+            1,
+            "qué tecnologías intervienen,"
+          ],
+          [
+            2,
+            "cuándo se popularizaron,"
+          ],
+          [
+            3,
+            "dónde se usan,"
+          ],
+          [
+            4,
+            "por qué son importantes"
+          ],
+          [
+            5,
+            "y cómo funcionan paso a paso."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            1,
+            "Analiza la brecha digital en escuelas rurales:"
+          ],
+          [
+            0,
+            "quiénes están afectados,"
+          ],
+          [
+            1,
+            "qué la causa,"
+          ],
+          [
+            2,
+            "cuándo se agudizó,"
+          ],
+          [
+            3,
+            "dónde es mayor,"
+          ],
+          [
+            4,
+            "por qué importa"
+          ],
+          [
+            5,
+            "y cómo reducirla."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "soap",
+      "sigla": "SOAP",
+      "nombreIngles": "Subject, Objective, Action, Plan",
+      "nombreEspanol": "Tema, Objetivo, Acción, Plan",
+      "categoria": "planeacion",
+      "icono": "🩺",
+      "evidencia": "ada",
+      "evidenciaTexto": "Adaptada",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Adaptado, con otras palabras, de la nota clínica SOAP (Subjective, Objective, Assessment, Plan) de Lawrence Weed, difundida en «Medical Records That Guide and Teach» (N Engl J Med, 1968). Solo conserva la lógica de pasar de los datos al plan.",
+      "descripcion": "Convierte ideas en planes accionables.",
+      "pasos": [
+        {
+          "letra": "S",
+          "ingles": "Subject",
+          "espanol": "Tema",
+          "icono": "🧩",
+          "descripcion": "Define el tema o el problema."
+        },
+        {
+          "letra": "O",
+          "ingles": "Objective",
+          "espanol": "Objetivo",
+          "icono": "🎯",
+          "descripcion": "Declara el propósito."
+        },
+        {
+          "letra": "A",
+          "ingles": "Action",
+          "espanol": "Acción",
+          "icono": "⚙️",
+          "descripcion": "Pide los pasos."
+        },
+        {
+          "letra": "P",
+          "ingles": "Plan",
+          "espanol": "Plan",
+          "icono": "🗓️",
+          "descripcion": "Solicita un plan o recomendación final."
+        }
+      ],
+      "usos": [
+        "Planes de aprendizaje",
+        "Desarrollo profesional docente"
+      ],
+      "buenasPracticas": [
+        "Pide el Plan con horizonte temporal y recursos.",
+        "Alinea el Objetivo con un marco de referencia (p. ej., DigCompEdu)."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Quiero ser mejor desarrollador de Flutter."
+          ],
+          [
+            1,
+            "Crea un plan de aprendizaje para lograrlo."
+          ],
+          [
+            2,
+            "Incluye recursos y pasos"
+          ],
+          [
+            3,
+            "y una hoja de ruta de 3 meses."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Tema: mi competencia digital docente."
+          ],
+          [
+            1,
+            "Objetivo: diseñar actividades con IA para mi asignatura."
+          ],
+          [
+            2,
+            "Propón etapas de formación."
+          ],
+          [
+            3,
+            "Plan: ruta de 8 semanas alineada con el marco DigCompEdu."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "grow",
+      "sigla": "GROW",
+      "nombreIngles": "Goal, Reality, Options, Way forward",
+      "nombreEspanol": "Meta, Realidad, Opciones, Camino a seguir",
+      "categoria": "planeacion",
+      "icono": "🌱",
+      "evidencia": "ada",
+      "evidenciaTexto": "Adaptada",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Adaptado del coaching: lo desarrollaron en el Reino Unido en los años ochenta Graham Alexander, Alan Fine y Sir John Whitmore, con inspiración en The Inner Game de Timothy Gallwey. Whitmore lo publicó en Coaching for Performance (1992).",
+      "descripcion": "Planifica, mejora y alcanza metas.",
+      "pasos": [
+        {
+          "letra": "G",
+          "ingles": "Goal",
+          "espanol": "Meta",
+          "icono": "🏁",
+          "descripcion": "Define la meta."
+        },
+        {
+          "letra": "R",
+          "ingles": "Reality",
+          "espanol": "Realidad",
+          "icono": "📍",
+          "descripcion": "Explica la situación actual."
+        },
+        {
+          "letra": "O",
+          "ingles": "Options",
+          "espanol": "Opciones",
+          "icono": "🔀",
+          "descripcion": "Explora las opciones posibles."
+        },
+        {
+          "letra": "W",
+          "ingles": "Way forward",
+          "espanol": "Camino a seguir",
+          "icono": "🧭",
+          "descripcion": "Sugiere los mejores siguientes pasos."
+        }
+      ],
+      "usos": [
+        "Tutoría y coaching académico",
+        "Desarrollo profesional",
+        "Planeación de metas personales"
+      ],
+      "buenasPracticas": [
+        "Pide a la IA que pregunte como un coach antes de proponer.",
+        "En tutoría, no delegues la decisión del estudiante: la IA ofrece opciones."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Quiero cambiar a una carrera en IA."
+          ],
+          [
+            1,
+            "Mis habilidades actuales son de desarrollo web."
+          ],
+          [
+            2,
+            "Sugiere opciones"
+          ],
+          [
+            3,
+            "y un plan paso a paso para la transición en 6 meses."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Actúa como coach académico. Mi meta es terminar mi tesis en 6 meses."
+          ],
+          [
+            1,
+            "Hazme preguntas sobre mi situación actual, una por una;"
+          ],
+          [
+            2,
+            "luego ofréceme opciones"
+          ],
+          [
+            3,
+            "y un plan semanal."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "fab",
+      "sigla": "FAB",
+      "nombreIngles": "Features, Advantages, Benefits",
+      "nombreEspanol": "Características, Ventajas, Beneficios",
+      "categoria": "comunicacion",
+      "icono": "💎",
+      "evidencia": "ada",
+      "evidenciaTexto": "Adaptada",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Técnica clásica de ventas, sin autor único verificado. Uso divulgativo en prompting.",
+      "descripcion": "Destaca características y beneficios: de lo que algo es a lo que aporta.",
+      "pasos": [
+        {
+          "letra": "F",
+          "ingles": "Features",
+          "espanol": "Características",
+          "icono": "🧾",
+          "descripcion": "Enumera las características o detalles clave."
+        },
+        {
+          "letra": "A",
+          "ingles": "Advantages",
+          "espanol": "Ventajas",
+          "icono": "➕",
+          "descripcion": "Explica las ventajas."
+        },
+        {
+          "letra": "B",
+          "ingles": "Benefits",
+          "espanol": "Beneficios",
+          "icono": "💎",
+          "descripcion": "Muestra el valor o el impacto."
+        }
+      ],
+      "usos": [
+        "Justificar la adopción de una herramienta o metodología",
+        "Presentaciones a directivos"
+      ],
+      "buenasPracticas": [
+        "Distingue ventaja (comparativa) de beneficio (impacto en el usuario).",
+        "Pide evidencias o fuentes que respalden los beneficios."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Explica las características clave de ChatGPT,"
+          ],
+          [
+            1,
+            "sus ventajas"
+          ],
+          [
+            2,
+            "y cómo pueden ayudar a un estudiante en su aprendizaje diario."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Describe los rasgos del aprendizaje basado en proyectos,"
+          ],
+          [
+            1,
+            "sus ventajas frente a la clase expositiva"
+          ],
+          [
+            2,
+            "y el impacto que puede tener en la motivación de mis alumnos de bachillerato."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "bab",
+      "sigla": "BAB",
+      "nombreIngles": "Before, After, Bridge",
+      "nombreEspanol": "Antes, Después, Puente",
+      "categoria": "comunicacion",
+      "icono": "🌉",
+      "evidencia": "ada",
+      "evidenciaTexto": "Adaptada",
+      "complejidad": "Baja",
+      "nivel": "Inicial",
+      "origen": "Fórmula de copywriting y marketing, sin autoría clara (aparece en la infografía de @anacarolinatz).",
+      "descripcion": "Describe la situación actual, la deseada y el camino que las une.",
+      "pasos": [
+        {
+          "letra": "B",
+          "ingles": "Before",
+          "espanol": "Antes",
+          "icono": "⏪",
+          "descripcion": "La situación actual."
+        },
+        {
+          "letra": "A",
+          "ingles": "After",
+          "espanol": "Después",
+          "icono": "⏩",
+          "descripcion": "La situación deseada."
+        },
+        {
+          "letra": "B",
+          "ingles": "Bridge",
+          "espanol": "Puente",
+          "icono": "🌉",
+          "descripcion": "Cómo llegar de una a otra."
+        }
+      ],
+      "usos": [
+        "Proyectos de mejora",
+        "Secuencias de transición"
+      ],
+      "buenasPracticas": [
+        "Describe el Después con conductas observables.",
+        "Pide que el Puente sea gradual y realista."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Antes: mis alumnos copian respuestas de la IA."
+          ],
+          [
+            1,
+            "Después: la usan para contrastar y argumentar."
+          ],
+          [
+            2,
+            "Puente: diseña una secuencia de 3 clases que haga ese tránsito."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pastor",
+      "sigla": "PASTOR",
+      "nombreIngles": "Problem, Amplify, Story, Transformation, Offer, Response",
+      "nombreEspanol": "Problema, Amplificar, Historia, Transformación, Oferta, Respuesta",
+      "categoria": "comunicacion",
+      "icono": "📣",
+      "evidencia": "ada",
+      "evidenciaTexto": "Adaptada",
+      "complejidad": "Alta",
+      "nivel": "Avanzado",
+      "origen": "Copywriting: creado por Ray Edwards para textos de venta persuasivos. Hay variantes (Story o Solution; Testimony).",
+      "descripcion": "Un marco simple para resolver problemas y construir propuestas persuasivas.",
+      "pasos": [
+        {
+          "letra": "P",
+          "ingles": "Problem",
+          "espanol": "Problema",
+          "icono": "⚠️",
+          "descripcion": "Enuncia el problema con claridad."
+        },
+        {
+          "letra": "A",
+          "ingles": "Amplify",
+          "espanol": "Amplificar",
+          "icono": "📢",
+          "descripcion": "Explica por qué importa."
+        },
+        {
+          "letra": "S",
+          "ingles": "Story",
+          "espanol": "Historia",
+          "icono": "📖",
+          "descripcion": "Añade contexto o ejemplos relevantes."
+        },
+        {
+          "letra": "T",
+          "ingles": "Transformation",
+          "espanol": "Transformación",
+          "icono": "🔄",
+          "descripcion": "Pide una solución o mejora."
+        },
+        {
+          "letra": "O",
+          "ingles": "Offer",
+          "espanol": "Oferta",
+          "icono": "🎁",
+          "descripcion": "Solicita opciones."
+        },
+        {
+          "letra": "R",
+          "ingles": "Response",
+          "espanol": "Respuesta",
+          "icono": "📤",
+          "descripcion": "Define el formato esperado."
+        }
+      ],
+      "usos": [
+        "Propuestas a la comunidad escolar",
+        "Resolución de problemas técnicos"
+      ],
+      "buenasPracticas": [
+        "En educación, «amplificar» debe basarse en datos, no en alarmismo.",
+        "Revisa que el texto final no resulte manipulador."
+      ],
+      "ejemplo": {
+        "fuente": "Infografía «9 ChatGPT Prompt Frameworks» (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Mi app falla en algunos dispositivos Android."
+          ],
+          [
+            3,
+            "Explica las posibles razones,"
+          ],
+          [
+            4,
+            "proporciona soluciones"
+          ],
+          [
+            5,
+            "y entrega una lista de verificación detallada para arreglarlo."
+          ]
+        ]
+      },
+      "ejemploEducativo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Muchos alumnos pasan más de 5 horas diarias en pantallas."
+          ],
+          [
+            1,
+            "Afecta su sueño y su concentración en clase."
+          ],
+          [
+            2,
+            "Un grupo de 2.º reportó dormir menos de 7 horas."
+          ],
+          [
+            3,
+            "Propón un programa de bienestar digital,"
+          ],
+          [
+            4,
+            "con tres opciones de implementación"
+          ],
+          [
+            5,
+            "en una propuesta de una página para el consejo escolar."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "five-s",
+      "sigla": "Five S",
+      "nombreIngles": "Set the scene, Be specific, Simplify your language, Structure the output, Share feedback",
+      "nombreEspanol": "Ambienta la escena, Sé específico, Simplifica tu lenguaje, Estructura la salida, Comparte retroalimentación",
+      "categoria": "educativos",
+      "icono": "🍎",
+      "evidencia": "aca",
+      "evidenciaTexto": "Institucional + académica",
+      "complejidad": "Media",
+      "nivel": "Inicial-intermedio",
+      "origen": "AI for Education (Amanda Bickerstaff). Estudiado en formación docente de química: Tassoti (2024, Journal of Chemical Education, 101(6), 2475–2482) y Sigot y Tassoti (2025, 102(6), 2507–2513), que observaron el paso de tácticas de copiar y pegar a estrategias más elaboradas.",
+      "descripcion": "Marco diseñado para docentes. Su quinta «S», la retroalimentación continua, es la más valiosa pedagógicamente.",
+      "pasos": [
+        {
+          "letra": "S",
+          "ingles": "Set the scene",
+          "espanol": "Ambienta la escena",
+          "icono": "🎬",
+          "descripcion": "Da contexto sobre el rol, la experiencia o el entorno."
+        },
+        {
+          "letra": "S",
+          "ingles": "Be specific",
+          "espanol": "Sé específico",
+          "icono": "📍",
+          "descripcion": "Define con claridad la tarea y los detalles que quieres incluir."
+        },
+        {
+          "letra": "S",
+          "ingles": "Simplify your language",
+          "espanol": "Simplifica tu lenguaje",
+          "icono": "💬",
+          "descripcion": "Enfoque conversacional, sin jerga innecesaria."
+        },
+        {
+          "letra": "S",
+          "ingles": "Structure the output",
+          "espanol": "Estructura la salida",
+          "icono": "🧱",
+          "descripcion": "Indica formato, audiencia y secciones."
+        },
+        {
+          "letra": "S",
+          "ingles": "Share feedback",
+          "espanol": "Comparte retroalimentación",
+          "icono": "🔁",
+          "descripcion": "Retroalimenta durante toda la conversación y precisa qué revisar."
+        }
+      ],
+      "usos": [
+        "Planeaciones y secuencias",
+        "Rúbricas",
+        "Materiales didácticos"
+      ],
+      "buenasPracticas": [
+        "Usa la S5 para contrastar la respuesta con otras fuentes.",
+        "Especifica el modelo didáctico (p. ej., 5E) y la duración.",
+        "Pide cambios concretos de formato en lugar de empezar de cero."
+      ],
+      "ejemplo": {
+        "fuente": "Imagen 1 · Prompt Framework for Educators (traducido)",
+        "segmentos": [
+          [
+            0,
+            "Eres un diseñador instruccional y docente experto en STEM."
+          ],
+          [
+            1,
+            "Usa el modelo 5E para crear una lección práctica de 60 minutos…"
+          ],
+          [
+            2,
+            "Crea un plan de clase atractivo alineado con los estándares CCSS…"
+          ],
+          [
+            3,
+            "Crea una rúbrica para mis estudiantes en formato de tabla con instrucciones…"
+          ],
+          [
+            4,
+            "Cambia el formato de tabla a lista de verificación…"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "rita-info",
+      "sigla": "RITA",
+      "variante": "Información",
+      "nombreIngles": "Role and context, Information, Task, Adaptability",
+      "nombreEspanol": "Rol y contexto, Información, Tarea, Adaptabilidad",
+      "categoria": "educativos",
+      "icono": "🗂️",
+      "evidencia": "ins",
+      "complejidad": "Media-alta",
+      "nivel": "Intermedio-avanzado",
+      "origen": "Juan José de Haro (2024), derivado del análisis de su Biblioteca Avanzada de Prompts Educativos con el GPT «Úrsula». Lo recogen el INTEF/CEDEC (Ministerio de Educación de España) y la Universidad de La Laguna.",
+      "descripcion": "Es un metaprompt: produce asistentes que entrevistan al docente antes de generar el material.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role and context",
+          "espanol": "Rol y contexto",
+          "icono": "🎭",
+          "descripcion": "Define el rol y el ámbito de la tarea."
+        },
+        {
+          "letra": "I",
+          "ingles": "Information",
+          "espanol": "Información",
+          "icono": "🗂️",
+          "descripcion": "La IA se presenta y hace preguntas específicas para obtener la información necesaria antes de proceder."
+        },
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "✅",
+          "descripcion": "La tarea que realizará con la información obtenida."
+        },
+        {
+          "letra": "A",
+          "ingles": "Adaptability",
+          "espanol": "Adaptabilidad",
+          "icono": "🔄",
+          "descripcion": "La IA comprueba y decide si necesita preguntas adicionales según la naturaleza de la tarea."
+        }
+      ],
+      "usos": [
+        "Asistentes y GPT personalizados para docentes",
+        "Generadores de situaciones de aprendizaje"
+      ],
+      "buenasPracticas": [
+        "Pide «haz las preguntas de una en una».",
+        "Revisa las preguntas que genera la IA y elimina inconsistencias.",
+        "Documenta qué información necesita el asistente para funcionar bien."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Eres un asistente experto en diseño de situaciones de aprendizaje para primaria."
+          ],
+          [
+            1,
+            "Preséntate y hazme, una por una, preguntas sobre el curso, la materia, los objetivos y las características del grupo antes de proceder."
+          ],
+          [
+            2,
+            "Con mis respuestas, diseña una situación de aprendizaje completa."
+          ],
+          [
+            3,
+            "Comprueba si necesitas más información según la naturaleza de la tarea y pregúntala antes de continuar."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "rita-inter",
+      "sigla": "RITA",
+      "variante": "Interacción",
+      "nombreIngles": "Role, Interaction, Task, Adaptability",
+      "nombreEspanol": "Rol, Interacción, Tarea, Adaptabilidad",
+      "categoria": "educativos",
+      "icono": "💬",
+      "evidencia": "div",
+      "complejidad": "Media",
+      "nivel": "Intermedio",
+      "origen": "Variante derivada (imágenes 5 y 6); no se encontró autoría publicada. A diferencia de la variante Información, define la relación pedagógica en una conversación de tutoría continua.",
+      "descripcion": "Define cómo debe relacionarse la IA con el usuario: tono, dinámica y tipo de acompañamiento.",
+      "pasos": [
+        {
+          "letra": "R",
+          "ingles": "Role",
+          "espanol": "Rol",
+          "icono": "🎭",
+          "descripcion": "Define quién responde: punto de vista, nivel de experiencia y marco discursivo. Ej.: «Actúa como profesor de bachillerato»."
+        },
+        {
+          "letra": "I",
+          "ingles": "Interaction",
+          "espanol": "Interacción",
+          "icono": "💬",
+          "descripcion": "Cómo relacionarse con el usuario: tono, dinámica, tipo de diálogo o acompañamiento. Ej.: «Haz preguntas antes de dar conclusiones»."
+        },
+        {
+          "letra": "T",
+          "ingles": "Task",
+          "espanol": "Tarea",
+          "icono": "✅",
+          "descripcion": "Qué hacer exactamente: producir, analizar, clasificar, reformular, generar, evaluar. Ej.: «Analiza este corpus y propón categorías»."
+        },
+        {
+          "letra": "A",
+          "ingles": "Adaptability",
+          "espanol": "Adaptabilidad",
+          "icono": "🔄",
+          "descripcion": "Condiciones de ajuste: nivel, extensión, estilo, iteración, cambios según retroalimentación. Ej.: «Ajusta el lenguaje a nivel bachillerato»."
+        }
+      ],
+      "usos": [
+        "Tutoría conversacional",
+        "Orientación",
+        "Aprendizaje por indagación"
+      ],
+      "buenasPracticas": [
+        "Pide que la IA sugiera nuevas preguntas para profundizar.",
+        "Indica cómo ajustar el nivel según las respuestas del estudiante."
+      ],
+      "ejemplo": {
+        "fuente": "Imagen 5 · Esquemas para redactar prompts",
+        "segmentos": [
+          [
+            0,
+            "Actúa como un orientador experto en ciudadanía digital, con un enfoque educativo y accesible."
+          ],
+          [
+            1,
+            "Fomenta activamente que haga preguntas, invítame a profundizar y, cuando sea útil, sugiere nuevas preguntas relacionadas con el tema."
+          ],
+          [
+            2,
+            "Proporciona respuestas breves, claras y directas a las preguntas que te iré haciendo sobre ciudadanía digital."
+          ],
+          [
+            3,
+            "Ajusta el lenguaje, el nivel de profundidad y los ejemplos según el tipo de preguntas que formule y mi nivel de comprensión."
+          ]
+        ]
+      }
+    },
+    {
+      "id": "clear-lo",
+      "sigla": "CLEAR",
+      "variante": "Lo, 2023",
+      "nombreIngles": "Concise, Logical, Explicit, Adaptive, Reflective",
+      "nombreEspanol": "Conciso, Lógico, Explícito, Adaptativo, Reflexivo",
+      "categoria": "educativos",
+      "icono": "📚",
+      "evidencia": "aca",
+      "complejidad": "Media",
+      "nivel": "Todos",
+      "origen": "Leo S. Lo, «The CLEAR path: A framework for enhancing information literacy through prompt engineering», The Journal of Academic Librarianship, 49(4), 102720 (2023). doi:10.1016/j.acalib.2023.102720",
+      "descripcion": "No es una plantilla de campos, sino cinco principios de calidad del prompt y de evaluación crítica de la respuesta, orientados a la alfabetización informacional.",
+      "pasos": [
+        {
+          "letra": "C",
+          "ingles": "Concise",
+          "espanol": "Conciso",
+          "icono": "✂️",
+          "descripcion": "Lenguaje claro; elimina lo irrelevante."
+        },
+        {
+          "letra": "L",
+          "ingles": "Logical",
+          "espanol": "Lógico",
+          "icono": "🧩",
+          "descripcion": "Orden coherente de las ideas y los pasos."
+        },
+        {
+          "letra": "E",
+          "ingles": "Explicit",
+          "espanol": "Explícito",
+          "icono": "🔦",
+          "descripcion": "Precisa formato, contenido y alcance."
+        },
+        {
+          "letra": "A",
+          "ingles": "Adaptive",
+          "espanol": "Adaptativo",
+          "icono": "🔄",
+          "descripcion": "Reformula y prueba variantes."
+        },
+        {
+          "letra": "R",
+          "ingles": "Reflective",
+          "espanol": "Reflexivo",
+          "icono": "🪞",
+          "descripcion": "Evalúa críticamente el resultado y ajusta."
+        }
+      ],
+      "usos": [
+        "Talleres de alfabetización informacional e IA",
+        "Bibliotecas universitarias",
+        "Investigación"
+      ],
+      "buenasPracticas": [
+        "Úsalo como lista de revisión de cualquier prompt.",
+        "La fase reflexiva incluye verificar fuentes primarias."
+      ],
+      "ejemplo": {
+        "fuente": "Ejemplo educativo",
+        "segmentos": [
+          [
+            0,
+            "Resume"
+          ],
+          [
+            2,
+            "en 5 viñetas"
+          ],
+          [
+            1,
+            "los argumentos a favor y en contra del horario escolar extendido, primero a favor y luego en contra."
+          ],
+          [
+            4,
+            "Indica qué afirmaciones requieren verificación en fuentes primarias."
+          ],
+          [
+            3,
+            "Si la respuesta es demasiado general, la reformularé por nivel educativo."
+          ]
+        ]
+      }
+    }
+  ]
+}

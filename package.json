@@ -1,0 +1,15 @@
+{
+  "name": "promptario",
+  "version": "1.0.0",
+  "description": "Promptario: marcos de trabajo para la elaboración de prompts y prompts para resolver problemas, para docentes y estudiantes.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "vista-previa": "node build.mjs && node scripts/servidor.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "author": "Alejandro De Fuentes Martínez (https://orcid.org/0000-0001-8176-7542)",
+  "license": "MIT",
+  "homepage": "https://promptario.work"
+}

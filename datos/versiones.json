@@ -1,0 +1,29 @@
+{
+  "_leeme": "Historial de versiones, de la más reciente a la más antigua. Se muestra en /novedades/. Usa versionado semántico: 1.0.1 para correcciones, 1.1.0 para contenido o funciones nuevas, 2.0.0 para cambios de estructura.",
+  "versiones": [
+    {
+      "version": "1.0.0",
+      "fecha": "2026-10-03",
+      "titulo": "Lanzamiento de Promptario",
+      "cambios": [
+        "Nuevo nombre, dominio propio (promptario.work) y lema: «Promptario, del latín promptarium: donde se guarda lo que está listo para usarse».",
+        "Se integra la colección «20 prompts para resolver problemas», antes inédita como Prompts_RP.",
+        "Cada marco y cada prompt tiene su propia página, con dirección fija y lista para buscadores.",
+        "Nuevas páginas: Acerca de, Talleres, Cómo citar y Novedades.",
+        "Cada ficha incluye su referencia en formato APA 7.",
+        "Buscador común para marcos y prompts.",
+        "El contenido vive en archivos de datos separados del código, y cada actualización se valida antes de publicarse.",
+        "Las tipografías se sirven desde el propio sitio, sin solicitudes a terceros."
+      ]
+    },
+    {
+      "version": "0.1.0",
+      "fecha": "2026-09-24",
+      "titulo": "Versión inicial: Prompts_Fw",
+      "cambios": [
+        "Aplicación de una sola página con 32 marcos de trabajo, tabla comparativa, guía de selección, buenas prácticas y constructor de prompts.",
+        "Publicada en prompting-frameworks.netlify.app, donde se conserva como versión histórica."
+      ]
+    }
+  ]
+}

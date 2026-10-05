@@ -1,0 +1,24 @@
+# Metadatos de cita. GitHub muestra el botón «Cite this repository» y Zenodo los usa al asignar el DOI.
+# Al publicar una versión nueva, actualiza «version» y «date-released» (y también datos/sitio.json).
+cff-version: 1.2.0
+message: "Si usas Promptario, cítalo con estos metadatos."
+type: software
+title: "Promptario: marcos de trabajo para la elaboración de prompts"
+abstract: "Aplicación web educativa con 32 marcos de trabajo para elaborar prompts y 20 prompts para resolver problemas, con pasos, ejemplos educativos, fundamentos y constructores interactivos. Dirigida a docentes y estudiantes hispanohablantes."
+version: "1.0.0"
+date-released: "2026-10-03"
+authors:
+  - family-names: "De Fuentes Martínez"
+    given-names: "Alejandro"
+    orcid: "https://orcid.org/0000-0001-8176-7542"
+url: "https://promptario.work"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - prompts
+  - ingeniería de prompts
+  - inteligencia artificial generativa
+  - tecnología educativa
+  - formación docente
+  - resolución de problemas
