@@ -387,4 +387,12 @@ details[open] summary{margin-bottom:8px}
 .pie__legal{grid-column:1/-1;font-size:13px;margin:0;max-width:none}
 .pie__legal a{color:var(--tenue)}
 @media (max-width:760px){.pie__in{grid-template-columns:minmax(0,1fr)}}
+/* Formularios incrustados (datos/formularios.json) */
+.formulario{max-width:760px}
+.formulario__nota{background:var(--superficie);border:1px solid var(--borde);border-left:4px solid var(--acento);border-radius:0 10px 10px 0;padding:10px 14px;font-size:16px}
+.formulario__marco{background:#fff;border:1px solid var(--borde);border-radius:16px;overflow:hidden}
+.formulario__marco iframe{display:block;width:100%;height:var(--alto,1600px);border:0}
+@media (max-width:680px){.formulario__marco iframe{height:calc(var(--alto,1600px) * 1.3)}}
+.formulario__ayuda{font-family:var(--fd);font-size:14.5px;margin:12px 0 4px}
+.formulario__privacidad{font-size:14.5px;color:var(--tenue)}
 @media print{.cabecera,.lateral,.pie,.pestanas__lista,.fila,.anterior-siguiente,.velo,.aviso{display:none!important}.panel[hidden]{display:block!important}.estructura.con-lateral{display:block}body{background:#fff}}

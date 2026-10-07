@@ -27,7 +27,8 @@ promptario/
 │   ├── sitio.json               Nombre, lema, versión, autor, licencias, portada
 │   ├── marcos.json              Los 32 marcos, categorías, guía y elementos comunes
 │   ├── resolver-problemas.json  Los 20 prompts, familias, rutas y guía
-│   └── versiones.json           Historial que se muestra en /novedades/
+│   ├── versiones.json           Historial que se muestra en /novedades/
+│   └── formularios.json         Formularios incrustados, cada uno con su página
 ├── contenido/                   Textos largos en HTML: Acerca, Talleres, buenas prácticas, fundamentos
 ├── generador/                   Plantillas de las páginas (código)
 ├── publico/                     Archivos que se copian tal cual: estilos, JavaScript, tipografías, imágenes
@@ -88,6 +89,21 @@ Todo está en `datos/sitio.json`. Para poner una palabra en cursiva en el lema, 
 ### Cambiar Acerca, Talleres, buenas prácticas o fundamentos
 
 Edita los archivos de `contenido/`. Son fragmentos HTML sencillos. Puedes usar marcas que se sustituyen solas, como `{{version}}`, `{{numMarcos}}` o `{{numPrompts}}`; el comentario al inicio de cada archivo lista las disponibles.
+
+### Formularios
+
+Cada formulario incrustado (por ejemplo, de Google Forms) se define en `datos/formularios.json` y genera su propia página con la cabecera y el pie del sitio. Para agregar otro, copia un elemento de la lista y ajusta sus campos:
+
+| Campo | Qué es |
+|---|---|
+| `ruta` | Dirección de la página, por ejemplo `/forms/registro_con_Google_Forms/`. Debe empezar y terminar con `/`. Las mayúsculas cuentan: compártela tal como está escrita. |
+| `titulo`, `descripcion` | Encabezado y texto introductorio; también se usan en los metadatos. |
+| `nota` | Opcional. Texto breve que admite enlaces en HTML. |
+| `formularioUrl` | La dirección del `src` del código de inserción de Google Forms (termina en `?embedded=true`). |
+| `enlaceDirecto` | Opcional. El enlace corto para abrir el formulario en otra pestaña. |
+| `altura` | El valor `height` del código de inserción, en píxeles. En celulares se amplía un 30 %. |
+| `privacidad` | Opcional. Aviso breve sobre el tratamiento de las respuestas. |
+| `indexar` | `false` para que los buscadores no muestren la página (recomendado para actividades de clase); `true` para permitirlo. |
 
 ### Cambiar colores o tipografía
 

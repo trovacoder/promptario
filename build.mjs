@@ -14,6 +14,7 @@ import { validar } from "./generador/validar.mjs";
 import * as M from "./generador/paginas-marcos.mjs";
 import * as R from "./generador/paginas-rp.mjs";
 import * as G from "./generador/paginas-generales.mjs";
+import { validarFormularios, paginaFormulario } from "./generador/paginas-formularios.mjs";
 
 const RAIZ = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(RAIZ, "dist");
@@ -31,6 +32,7 @@ try {
     marcos: leerJSON("marcos.json"),
     rp: leerJSON("resolver-problemas.json"),
     versiones: leerJSON("versiones.json"),
+    formularios: fs.existsSync(path.join(RAIZ, "datos", "formularios.json")) ? leerJSON("formularios.json") : { formularios: [] },
   };
 } catch (e) {
   console.error(`\n✖ No se pudo leer un archivo de datos: ${e.message}\n  Revisa que el JSON esté bien formado (comas, comillas y llaves).\n`);
@@ -39,6 +41,7 @@ try {
 
 /* 2. Validación */
 const { errores, avisos } = validar(datos);
+errores.push(...validarFormularios(datos.formularios));
 avisos.forEach((a) => console.warn(`⚠ ${a}`));
 if (errores.length) {
   console.error(`\n✖ Se encontraron ${errores.length} error(es). El sitio no se generó:\n`);
@@ -95,6 +98,7 @@ const paginas = [
   R.buenasPracticasRP(ctx, fragmento("rp-buenas-practicas.html")),
   R.fundamentosRP(ctx, fragmento("rp-fundamentos.html")),
   ...ctx.rp.prompts.map((p, i) => R.fichaPrompt(ctx, p, i)),
+  ...ctx.formularios.formularios.map((f) => paginaFormulario(ctx, f)),
 ];
 
 const rutas = new Set();
