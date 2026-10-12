@@ -15,6 +15,7 @@ import * as M from "./generador/paginas-marcos.mjs";
 import * as R from "./generador/paginas-rp.mjs";
 import * as G from "./generador/paginas-generales.mjs";
 import { validarFormularios, paginaFormulario } from "./generador/paginas-formularios.mjs";
+import { validarComentarios, paginaComentarios, paginaGracias } from "./generador/paginas-comentarios.mjs";
 
 const RAIZ = path.dirname(fileURLToPath(import.meta.url));
 const DIST = path.join(RAIZ, "dist");
@@ -42,6 +43,7 @@ try {
 /* 2. Validación */
 const { errores, avisos } = validar(datos);
 errores.push(...validarFormularios(datos.formularios));
+errores.push(...validarComentarios(datos.sitio));
 avisos.forEach((a) => console.warn(`⚠ ${a}`));
 if (errores.length) {
   console.error(`\n✖ Se encontraron ${errores.length} error(es). El sitio no se generó:\n`);
@@ -87,6 +89,8 @@ const paginas = [
   G.citar(ctx),
   G.novedades(ctx),
   G.noEncontrada(ctx),
+  paginaComentarios(ctx),
+  paginaGracias(ctx),
   M.catalogoMarcos(ctx),
   M.comparativa(ctx),
   M.guiaMarcos(ctx),
@@ -149,6 +153,7 @@ const indice = [
     ["Talleres", "/talleres/", "capacitación curso formación docentes"],
     ["Cómo citar Promptario", "/citar/", "cita referencia APA BibTeX DOI"],
     ["Acerca de Promptario", "/acerca/", "nombre latín promptarium autor créditos licencia"],
+    ["Comentarios", "/comentarios/", "comentario sugerencia opinión retroalimentación mejora error contacto"],
   ].map(([t, u, k]) => ({ t, d: "Página", u, k })),
 ];
 fs.writeFileSync(path.join(DIST, "indice-busqueda.json"), JSON.stringify(indice));

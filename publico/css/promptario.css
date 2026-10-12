@@ -395,4 +395,33 @@ details[open] summary{margin-bottom:8px}
 @media (max-width:680px){.formulario__marco iframe{height:calc(var(--alto,1600px) * 1.3)}}
 .formulario__ayuda{font-family:var(--fd);font-size:14.5px;margin:12px 0 4px}
 .formulario__privacidad{font-size:14.5px;color:var(--tenue)}
+/* Comentarios (Netlify Forms) */
+.formulario-comentarios,.confirmacion{max-width:780px}
+.formulario-comentarios{background:var(--superficie);border:1px solid var(--borde);border-radius:16px;padding:clamp(18px,3vw,28px);display:grid;gap:18px}
+.formulario-comentarios .campo{margin:0}
+.opcional{font-weight:400;color:var(--tenue);font-size:.92em}
+.comentario-sobre{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;background:var(--superficie2);border:1px solid var(--borde);border-left:4px solid var(--acento);border-radius:0 10px 10px 0;padding:10px 14px}
+.comentario-sobre p{margin:0;font-family:var(--fd)}
+.comentario-sobre__etiqueta{color:var(--tenue)}
+.comentario-sobre a{font-weight:600}
+.boton--discreto{border-color:transparent;background:transparent;color:var(--acento);padding:6px 8px;font-size:14.5px}
+.boton--discreto:hover{border-color:var(--borde)}
+.grupo-opciones{border:0;margin:0;padding:0;min-width:0}
+.grupo-opciones legend{font-family:var(--fd);font-weight:600;font-size:15px;margin-bottom:8px;padding:0}
+.opciones-chips{display:flex;flex-wrap:wrap;gap:8px}
+.opcion{position:relative;display:inline-flex}
+.opcion input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opcion span{border:1px solid var(--borde-fuerte);background:var(--superficie);border-radius:999px;padding:7px 14px;font-family:var(--fd);font-size:14.5px;line-height:1.3;cursor:pointer}
+.opcion input:checked+span{background:var(--texto);color:var(--fondo);border-color:var(--texto)}
+.opcion input:focus-visible+span{outline:3px solid var(--foco);outline-offset:2px}
+.campos-dobles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.formulario-comentarios__privacidad{font-size:14.5px;color:var(--tenue);margin:0;max-width:none}
+.formulario-comentarios .fila{margin:0}
+.error-envio{background:color-mix(in srgb,var(--f-diag) 12%,var(--superficie));border:1px solid var(--f-diag);color:var(--texto);border-radius:10px;padding:10px 14px;margin:0;max-width:none}
+.confirmacion{background:var(--superficie);border:1px solid var(--borde);border-left:5px solid var(--f-plan);border-radius:0 16px 16px 0;padding:22px 26px}
+.confirmacion h2{margin-top:0}
+.confirmacion:focus{outline:none}
+.invitacion-comentar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;margin-top:26px;padding:14px 18px;border:1px dashed var(--borde-fuerte);border-radius:12px}
+.invitacion-comentar p{margin:0;font-family:var(--fd);font-size:15.5px}
+.invitacion-comentar+.cita-ficha{margin-top:12px}
 @media print{.cabecera,.lateral,.pie,.pestanas__lista,.fila,.anterior-siguiente,.velo,.aviso{display:none!important}.panel[hidden]{display:block!important}.estructura.con-lateral{display:block}body{background:#fff}}

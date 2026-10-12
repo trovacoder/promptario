@@ -1,5 +1,6 @@
 // Plantilla común de todas las páginas: <head> con SEO, cabecera, navegación lateral y pie.
 import { esc, conCursivas, sinMarcas, jsonIncrustado } from "./utilidades.mjs";
+import { enlaceComentar, RUTA_COMENTARIOS } from "./paginas-comentarios.mjs";
 
 export const simboloMarca = (clase = "marca__simbolo") => `<svg class="${clase}" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
 <rect x="2.25" y="2.25" width="27.5" height="27.5" rx="6" fill="none" stroke="currentColor" stroke-width="2.5"/>
@@ -141,7 +142,7 @@ export function pagina(ctx, p) {
     ${p.contenido}
   </main>
 </div>
-${pie(ctx)}
+${pie(ctx, p)}
 <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
 <script src="/js/promptario.js?v=${ctx.huellas.js}" defer></script>
 </body>
@@ -149,8 +150,13 @@ ${pie(ctx)}
 `;
 }
 
-export function pie(ctx) {
+export function pie(ctx, p = {}) {
   const s = ctx.sitio;
+  // Enlace contextual: las páginas indexables envían su dirección y su título al formulario de comentarios.
+  const contextual = p.ruta && !p.ruta.startsWith(RUTA_COMENTARIOS) && !(p.robots || "").startsWith("noindex");
+  const comentar = contextual
+    ? `<a href="${esc(enlaceComentar(p.ruta, p.titulo))}">Comenta esta página</a>`
+    : `<a href="${RUTA_COMENTARIOS}">Comentarios</a>`;
   return `<footer class="pie">
   <div class="pie__in">
     <div class="pie__marca">
@@ -166,6 +172,7 @@ export function pie(ctx) {
       <a href="/citar/">Cómo citar</a>
       <a href="/novedades/">Novedades</a>
       <a href="/talleres/">Talleres</a>
+      ${comentar}
       <a href="${esc(s.versionHistorica.url)}">Versión histórica</a>
     </nav>
     <p class="pie__legal">© ${s.anioPublicacion} ${esc(s.autor.nombre)}. Contenido bajo licencia <a href="${s.licencias.contenido.url}">${s.licencias.contenido.nombre}</a>; código bajo licencia <a href="${s.licencias.codigo.url}">${s.licencias.codigo.nombre}</a>. Versión ${esc(s.version)}.</p>

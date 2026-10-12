@@ -11,10 +11,10 @@
   "fechaVersion": "2026-10-07",
   "anioPublicacion": 2026,
   "doi": "10.5281/zenodo.23220226",
-  "repositorio": "",
+  "repositorio": "https://github.com/trovacoder/promptario",
   "autor": {
     "nombre": "Alejandro De Fuentes Martínez",
-    "nombreCompleto": "Dr. Alex De Fuentes Martínez",
+    "nombreCompleto": "Dr. Alex de Fuentes Martínez",
     "apellidosCita": "De Fuentes Martínez",
     "inicialesCita": "A.",
     "orcid": "https://orcid.org/0000-0001-8176-7542",
@@ -36,6 +36,14 @@
   "talleres": {
     "contactoUrl": "https://alexdefuentes.work",
     "contactoTexto": "alexdefuentes.work"
+  },
+  "comentarios": {
+    "_leeme": "Página /comentarios/, que recibe las respuestas con Netlify Forms. Puedes cambiar los textos y las opciones; no cambies «nombreFormulario» después de publicar, porque Netlify agrupa las respuestas por ese nombre.",
+    "nombreFormulario": "comentarios",
+    "entradilla": "Tus puntos de vista, recomendaciones y oportunidades de mejora orientan las siguientes versiones de Promptario. Solo el autor lee estos comentarios.",
+    "tipos": ["Retroalimentación general", "Recomendación", "Oportunidad de mejora", "Punto de vista", "Error en el sitio"],
+    "perfiles": ["Docente", "Estudiante", "Formador o formadora de docentes", "Otro"],
+    "privacidad": "Los comentarios se guardan en la cuenta de Netlify del autor de Promptario y solo él los lee. El nombre y el correo son opcionales: escríbelos únicamente si quieres recibir respuesta. No incluyas datos personales de estudiantes ni de terceros."
   },
   "portada": {
     "gavetero": ["rtf", "costar", "crispe", "care-nng", "rise", "star", "grow", "soap", "five-s", "rita-info", "clear-lo", "icio"],
