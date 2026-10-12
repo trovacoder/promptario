@@ -105,6 +105,16 @@ Cada formulario incrustado (por ejemplo, de Google Forms) se define en `datos/fo
 | `privacidad` | Opcional. Aviso breve sobre el tratamiento de las respuestas. |
 | `indexar` | `false` para que los buscadores no muestren la página (recomendado para actividades de clase); `true` para permitirlo. |
 
+### Comentarios
+
+La página `/comentarios/` recibe puntos de vista, recomendaciones y oportunidades de mejora con **Netlify Forms**. Cada ficha incluye el botón «Comenta este marco» o «Comenta este prompt», y el pie de cada página, el enlace «Comenta esta página»; así, cada comentario indica de qué página viene (campo `url`).
+
+- **Textos y opciones:** se cambian en `datos/sitio.json`, bloque `comentarios`. No cambies `nombreFormulario` después de publicar, porque Netlify agrupa las respuestas por ese nombre.
+- **Leer los comentarios:** en Netlify, proyecto promptario, sección **Forms**, formulario `comentarios`. Desde ahí puedes exportarlos a CSV.
+- **Aviso por correo:** en **Project configuration → Notifications → Emails and webhooks → Form submission notifications**, agrega una notificación por correo para el formulario `comentarios`.
+- **Spam:** el formulario tiene un campo trampa invisible (`campo-trampa`) y Netlify filtra el spam. Los envíos marcados como spam aparecen aparte, en la misma sección.
+- **Límite del plan gratuito anterior:** 100 envíos al mes por sitio. Para evaluaciones masivas de talleres, usa Google Forms con `datos/formularios.json`.
+
 ### Cambiar colores o tipografía
 
 Las variables están al inicio de `publico/css/promptario.css`, con un juego para el tema claro y otro para el oscuro.
@@ -138,6 +148,7 @@ Pasos:
   - `copiar_cita`
   - `buscar`
   - `demo_completar`
+  - `comentario_enviado`
 
   Si instalas Umami o GoatCounter con la misma inyección de fragmentos, los recibirán automáticamente. No se registran datos personales.
 

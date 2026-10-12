@@ -371,6 +371,80 @@
     });
   }
 
+  /* ---------- Página de comentarios (Netlify Forms) ---------- */
+  const moduloComentarios = $('[data-modulo="comentarios"]');
+  if (moduloComentarios) {
+    const form = $("[data-formulario-comentarios]", moduloComentarios);
+    const confirmacion = $("[data-confirmacion]", moduloComentarios);
+    const sobre = $("[data-sobre]", form), sobreEnlace = $("[data-sobre-enlace]", form);
+    const campoPagina = $("[data-pagina]", form), campoUrl = $("[data-url]", form), envolturaPagina = $("[data-campo-pagina]", form);
+    const texto = $("#comentario-texto", form), contador = $("[data-contador-texto]", form);
+    const error = $("[data-error]", form), enviar = $("[data-enviar]", form);
+
+    // La ficha de origen llega como ?pagina=/marcos/costar/&titulo=CO-STAR (solo se aceptan rutas internas).
+    const q = new URLSearchParams(location.search);
+    const ruta = q.get("pagina") || "", titulo = (q.get("titulo") || "").slice(0, 160);
+    const fijarOrigen = (r, t) => {
+      const valida = /^\/[A-Za-z0-9_\-/]*$/.test(r) && !r.startsWith("//");
+      campoUrl.value = valida ? r : "";
+      sobre.hidden = !valida;
+      envolturaPagina.hidden = valida; // con una ficha de origen, el campo de página sobra
+      $("[data-volver]", moduloComentarios).href = valida ? r : "/";
+      if (valida) {
+        sobreEnlace.textContent = t || r;
+        sobreEnlace.href = r;
+        campoPagina.value = t || r;
+      }
+    };
+    fijarOrigen(ruta, titulo);
+
+    const actualizarContador = () => {
+      const n = texto.value.length;
+      contador.textContent = n ? `${n} de 3000 caracteres.` : "Máximo 3000 caracteres.";
+    };
+    texto.addEventListener("input", actualizarContador);
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      error.hidden = true;
+      if (!form.reportValidity()) return;
+      enviar.disabled = true;
+      enviar.textContent = "Enviando…";
+      const datos = new URLSearchParams(new FormData(form));
+      fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: datos.toString() })
+        .then((r) => {
+          if (!r.ok) throw new Error(String(r.status));
+          registrarEvento("comentario_enviado", { tipo: datos.get("tipo") || "", pagina: campoUrl.value || "general" });
+          form.hidden = true;
+          confirmacion.hidden = false;
+          confirmacion.focus();
+          confirmacion.scrollIntoView({ block: "start", behavior: reducido() ? "auto" : "smooth" });
+        })
+        .catch(() => {
+          error.textContent = "No se pudo enviar el comentario. Revisa tu conexión a internet e inténtalo de nuevo; tu texto sigue en el formulario.";
+          error.hidden = false;
+        })
+        .finally(() => { enviar.disabled = false; enviar.textContent = "Enviar comentario"; });
+    });
+
+    moduloComentarios.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-accion]");
+      if (!b) return;
+      if (b.dataset.accion === "comentario-general") {
+        fijarOrigen("", "");
+        campoPagina.value = "";
+        history.replaceState(null, "", location.pathname);
+        campoPagina.focus();
+      } else if (b.dataset.accion === "otro-comentario") {
+        texto.value = "";
+        actualizarContador();
+        confirmacion.hidden = true;
+        form.hidden = false;
+        texto.focus();
+      }
+    });
+  }
+
   /* ---------- Acciones generales ---------- */
   document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-accion]");

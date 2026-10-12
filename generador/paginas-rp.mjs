@@ -1,6 +1,7 @@
 // Páginas de la sección «Resolver problemas»: inicio con catálogo, fichas, guía, rutas, buenas prácticas y fundamentos.
 import { esc, slug, recortar, jsonIncrustado } from "./utilidades.mjs";
 import { bloqueCita } from "./paginas-marcos.mjs";
+import { invitacionComentar } from "./paginas-comentarios.mjs";
 
 export const rutaPrompt = (p) => `/resolver-problemas/${p.id}/`;
 const colorFamilia = (k) => `var(--f-${k})`;
@@ -185,6 +186,7 @@ ${p.variables.map((v) => `<div class="campo"><label for="var-${v.clave}">${esc(v
 ${anterior ? `<a href="${rutaPrompt(anterior)}" rel="prev"><small>Anterior</small>${anterior.numero}. ${esc(anterior.titulo)}</a>` : "<span></span>"}
 ${siguiente ? `<a href="${rutaPrompt(siguiente)}" rel="next" class="anterior-siguiente__siguiente"><small>Siguiente</small>${siguiente.numero}. ${esc(siguiente.titulo)}</a>` : ""}
 </nav>
+${invitacionComentar(ruta, `${p.numero}. ${p.titulo}`, "este prompt")}
 ${bloqueCita(ctx, `${p.titulo} (prompt ${p.numero})`, ruta)}
 <script type="application/json" id="datos-ficha">${jsonIncrustado(datos)}</script>
 </article>`;

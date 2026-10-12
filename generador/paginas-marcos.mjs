@@ -1,6 +1,7 @@
 // Páginas de la sección «Marcos de trabajo»: catálogo, fichas, tabla comparativa, guía y buenas prácticas.
 import { esc, slug, recortar, tintaSobre, jsonIncrustado, sinMarcas } from "./utilidades.mjs";
 import { figuraMarco } from "./figura.mjs";
+import { invitacionComentar } from "./paginas-comentarios.mjs";
 
 export const etiquetaMarco = (m) => m.sigla + (m.variante ? ` (${m.variante})` : "");
 export const rutaMarco = (m) => `/marcos/${m.id}/`;
@@ -198,6 +199,7 @@ ${m.ejemploEducativo ? ejemploHTML(m.ejemploEducativo) : ""}
 ${anterior ? `<a href="${rutaMarco(anterior)}" rel="prev"><small>Anterior</small>${anterior.icono} ${esc(etiquetaMarco(anterior))}</a>` : "<span></span>"}
 ${siguiente ? `<a href="${rutaMarco(siguiente)}" rel="next" class="anterior-siguiente__siguiente"><small>Siguiente</small>${siguiente.icono} ${esc(etiquetaMarco(siguiente))}</a>` : ""}
 </nav>
+${invitacionComentar(ruta, etiquetaMarco(m), "este marco")}
 ${bloqueCita(ctx, `${etiquetaMarco(m)}: ${m.nombreEspanol}`, ruta)}
 <script type="application/json" id="datos-ficha">${jsonIncrustado(datos)}</script>
 </article>`;
